@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(/images/fort_img/fort_backgraund.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px 0;
+    background: rgba(132, 109, 109, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2em;
+}
+
+/* Navigation Bar Styles */
+.head {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+#Nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#Nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+#Nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main Styles */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #333;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(228, 215, 215);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.fort-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background: rgba(238, 180, 101, 1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h4 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.card a {
+    text-decoration: none;
+    color: #787878;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 2rem);
+    }
+}
