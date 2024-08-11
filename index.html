@@ -2,38 +2,60 @@
 <html>
 <head>
     <title>Shivaji Maharaj details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
-            padding: 0;
+            padding: 0; 
+        }
+        body{
+            background-image: url(./images/imgback.jpg);
+            background-size: cover;
         }
         .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+        margin-top: 0px;
+        height: 190px;
+        width: 100%;
+        background-color: gray;
+        flex-direction: row;
+        display: flex;
+        border-radius: none;
         }
         .head{
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
+            margin: 40px 0 0 0;
+            padding: 0 0 20px 0;
+        }
+        .navbar{
+        padding: 5px;
+        font-size: 20px;
+        display: flex;
+        text-align: start;
+        
         }
         #Nav{
             font-size: 17px;
-            margin-top: 100px;
-            margin-left: 20px;
+            margin:90px 0 0 17px;
         }
         .img{
-            height: 200px;
-            width: 200px;
+            height: 170px;
+            width: 260px;
+            margin-inline-start:-30px;
+            margin-top: -30px;
         }
         a{
-            color: beige;
+            color:#000033;
             text-decoration: none;
         }
         a:hover{
-            color:black;
+            color:#ff6600;
         }
-        .img_1{
-          background-size: cover;
-          width: 1520px;
+        #para_1{
+            margin: 150px 0 0 140px;
+            font-size: 75px;
+            color: #ff3300;
+            font-family: "Dancing Script", cursive;;
         }
     </style>
 </head>
@@ -41,6 +63,9 @@
     <div class="container">
      <div class="head">
         <img src="../images/bgimg.png" alt="Rajmudra" class="img">
+        </div>
+        <!-------Navbars-------->
+        <div class="navbar">
         <p id="Nav"><a href="./index.html">HOME</a></p>
         <p id="Nav"><a href="./Pages/About.html">ABOUT</a></p>
         <p id="Nav"><a href="./Pages/histroy.html">HISTROY</a></p>
@@ -51,13 +76,13 @@
         <p id="Nav"><a href="./Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
         <p id="Nav"><a href="./Pages/achivements.html">ACHIVEMENTS</a></p>
         <p id="Nav"><a href="./Pages/contact.html">CONTACT US</a></p>
-     </div>
     </div>
-    <div class="container_2">
-      <div class="text">
-    <img src="./images/shivaji.jpeg" alt="" class="img_1">
-   
-  </div>
-  </div> 
+</div>
+<!-------name of maharaj------->
+<div class="container_2">
+    <p id="para_1">Chhatrapati Shivaji Maharaj </p>
+</div>
+</div> 
+</div>
 </body>
 </html>
