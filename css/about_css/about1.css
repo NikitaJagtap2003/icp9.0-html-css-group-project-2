@@ -1,8 +1,5 @@
 
-body{
-    background: linear-gradient(to right, rgb(214, 210, 255),rgb(229, 224, 255),rgb(197, 186, 255),rgb(238, 235, 255),rgb(191, 181, 255));
- 
-}
+
 .contaner1{
     display:flex;
     flex-wrap: wrap;
