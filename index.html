@@ -34,7 +34,6 @@
              font-size: 20px;
              display: flex;
              text-align: start;
-        
         }
         #Nav{
              font-size: 17px;
@@ -64,18 +63,49 @@
             margin: 6px;
             color: wheat;
             margin-left: 150px;
-            font-family: "Dancing Script", cursive;;
+            font-family: "Dancing Script", cursive;
         }
         #writer{
             margin-left: 550px;
             font-size: 25px;
             color:#000033;
         }
-        .box{
-            height: 200px;
-            width: 100px;
-            border: 2px solid #000033;
+        .container_3{
+            display: flex;
+            
         }
+        #heading{
+            font-size: 35px;
+            color: #000033;
+            padding: 400px;
+        }
+        #img1{
+            border: 20px solid orangered;
+            margin: 100px;
+            height: 500px;
+            width: 500px;
+        }
+        #info{
+            margin: 120px 0 0 10px;
+            font-size: 20px;
+            color: #000033;
+           
+        }
+        #Btn{
+            font-size: 20px;
+            color:wheat;
+            background-color: orangered;
+            margin: 40px 0 0 350px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: none;
+        }
+        #Btn:hover{
+            background-color: #ff6600;
+            box-shadow: 1px 2px 2px 3px black;
+            transition: 1s;
+        }
+        
         
     </style>
 </head>
@@ -106,8 +136,24 @@
     <p id="writer">----Quotes by Chhatrapati Shivaji Maharaj</p>
 </div>
 </div>
-<div class="container_3">
-    <div class="box"></div>
-</div>
+     <span id="heading">CHHATRAPATI SHIVAJI MAHARAJ INFO</span>
+     <div class="container_3">
+      <div class="box">
+        <img src="./images/img1.jpg_large" id="img1">
+    </div>
+    <div class="cont">
+        <p id="info">Shivaji I (Shivaji Shahaji Bhonsale, 19 February 1630 – 3 April 1680)was an Indian ruler and a member of the Bhonsle dynasty.Shivaji carved out his own independent kingdom from the Adilshahi Sultanate of Bijapur that formed the genesis of the Maratha Confederacy. In 1674, he was formally crowned the Chhatrapati of his realm at Raigad Fort.
+            <br/>
+            <br/>
+        Throughout his life, Shivaji engaged in both alliances and hostilities with the Mughal Empire, the Sultanate of Golkonda, the Sultanate of Bijapur and the European colonial powers. Following the Battle of Purandar, Shivaji entered into vassalage with the Mughal empire, assuming the role of a Mughal chief and undertaking military expeditions on behalf of the empire for a brief duration.Shivaji's military forces expanded the Maratha sphere of influence, capturing and building forts, and forming a Maratha navy. Shivaji established a competent and progressive civil administration with well-structured administrative institutions. He revived ancient Hindu political traditions, and court conventions and promoted the use of the Marathi and Sanskrit languages, replacing Persian at court and in administration. Praised for his chivalrous treatment of women,Shivaji employed people of all castes and religions, including Muslims and Europeans, in his administration and armed forces.
+        <br/>
+        <br/>
+        Shivaji's legacy was to vary by observer and time, but nearly two centuries after his death he began to take on increased importance with the emergence of the Indian independence movement, as many Indian nationalists elevated him as a proto-nationalist, founder of the Swaraj movement, and hero of the Hindus.</p>
+        <a href="./Pages/histroy.html"> <button id="Btn">Read More</button></a>
+       
+    </div>
+     </div>
+    </div>
+    </div>
 </body>
 </html>
