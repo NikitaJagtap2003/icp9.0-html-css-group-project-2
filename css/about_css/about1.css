@@ -1,6 +1,6 @@
 
 body{
-    background: linear-gradient(to right, rgb(223, 220, 255),rgb(222, 217, 255),rgb(231, 227, 255),rgb(222, 217, 255),rgb(191, 181, 255));
+    background: linear-gradient(to right, rgb(214, 210, 255),rgb(229, 224, 255),rgb(197, 186, 255),rgb(238, 235, 255),rgb(191, 181, 255));
  
 }
 .contaner1{
@@ -132,7 +132,7 @@ color: rgb(141, 110, 110);
  border-radius: 18px;
 }
 .about-font{
-    font-size: 15px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: 100;
 }
@@ -150,10 +150,7 @@ color: rgb(141, 110, 110);
   
 
 }
-.aboutcontiner:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-}
+
 .aboutcontiner1{
     margin-left: 30px;
   
@@ -168,14 +165,9 @@ color: rgb(141, 110, 110);
   
 
 }
-.aboutcontiner1:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-}
-.aboutcontiner4:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-}
+
+
+
 
 
 
@@ -429,7 +421,7 @@ color: rgb(141, 110, 110);
         
     }.about-us-imgg:hover{
         transition: 0.2s;
-        background: linear-gradient(to right, #92e0ff,#7cdaff, #40c9ff, #10bbff );
+        background: linear-gradient(to right, #dff6ff,#a9e7ff, #83dcff, #73d7ff );
        
      
         border: rgb(87, 86, 86) 3px solid;
