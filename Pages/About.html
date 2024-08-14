@@ -12,7 +12,9 @@
             box-sizing: border-box;
         }
         .container {
-            background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+            position: fixed;
+            top: 0;
+          
             padding: 20px;
         }
         .head {
@@ -30,19 +32,19 @@
         #Nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 1px;
             list-style: none;
         }
         #Nav a {
             color: beige;
             text-decoration: none;
             font-size: 17px;
-            padding: 10px;
+            padding: 7px;
             border-radius: 5px;
         }
         #Nav a:hover {
             color: black;
-            background: rgba(255, 255, 255, 0.2);
+         
         }
         
         .container_2 {
@@ -52,9 +54,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="head">
-            <img src="../images/bgimg.png" alt="Rajmudra">
+       
             <nav id="Nav">
+                <div class="head">
+                    <img src="../images/bgimg.png" alt="Rajmudra">
                 <a href="../index.html">HOME</a>
                 <a href="#">ABOUT</a>
                 <a href="../Pages/history.html">HISTORY</a>
@@ -70,6 +73,7 @@
     </div>
    
 </div> 
+<br><br><br><br>
 <center>
     <div class="about-continer ">
 <div class="image">
