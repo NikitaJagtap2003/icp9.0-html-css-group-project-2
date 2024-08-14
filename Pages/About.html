@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/about_css/about.css">
     <title>Shivaji Maharaj Details</title>
     <style>
         * {
@@ -11,7 +12,9 @@
             box-sizing: border-box;
         }
         .container {
-            background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+            position: fixed;
+            top: 0;
+          
             padding: 20px;
         }
         .head {
@@ -29,27 +32,21 @@
         #Nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 1px;
             list-style: none;
         }
         #Nav a {
             color: beige;
             text-decoration: none;
             font-size: 17px;
-            padding: 10px;
+            padding: 7px;
             border-radius: 5px;
         }
         #Nav a:hover {
             color: black;
-            background: rgba(255, 255, 255, 0.2);
+         
         }
-        .img_1 {
-            background-size: cover;
-            width: 100%;
-            max-width: 1520px;
-            height: auto;
-            margin: 20px 0;
-        }
+        
         .container_2 {
             padding: 20px;
         }
@@ -57,9 +54,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="head">
-            <img src="../images/bgimg.png" alt="Rajmudra">
+       
             <nav id="Nav">
+                <div class="head">
+                    <img src="../images/bgimg.png" alt="Rajmudra">
                 <a href="../index.html">HOME</a>
                 <a href="#">ABOUT</a>
                 <a href="../Pages/history.html">HISTORY</a>
@@ -73,10 +71,41 @@
             </nav>
         </div>
     </div>
-    <div class="container_2">
-        <div class="text">
-            <img src="../images/shivaji.jpeg" alt="Shivaji Maharaj" class="img_1">
-        </div>
-    </div> 
+   
+</div> 
+<br><br><br><br>
+<center>
+    <div class="about-continer ">
+<div class="image">
+     
+</div>  
+
+
+<div  class="content " >
+<h1 class="about-heading">About Us</h1>
+<p class="about-text ">Our mission is to honor 
+<b style="color:rgb(243, 151, 151);background-color:rgb(252, 251, 249);"> Chhatrapati Shivaji Maharaj</b> 
+ by celebrating his leadership, bravery, and commitment to justice. We aim to preserve his legacy, educate others
+ about his life, and inspire unity and courage in future generations. By promoting his values and cultural heritage, 
+ we strive to keep his story alive and empower individuals to make a lasting impact.
+
+</p>    
+       
+<a href="./about1.html"target="_blank">
+    <button class="btn6 box ">
+    <img src="./../images/about_imgs/readmore.png" width="23px" height="18px"> Read More</button></a>
+</p>
+
+
+
+
+</div> 
+          
+  
+</center>
+</div><br><br><br><br><br><br>
+
+
+
 </body>
 </html>
