@@ -277,6 +277,15 @@ color: rgb(141, 110, 110);
     transition: 3s ease-in-out;
 
 }
+.footer-bottom {
+    margin-top: 5px;color: #c05a5a;text-align: center;background-color: #f6eaea;
+padding-top: 1px;
+   
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
 .image5 { 
     display: block;
     margin-left: 40px;
