@@ -31,14 +31,18 @@
 .achivements{
 width: 400px;
 height: 520px;
-    border:1px solid black;
+    border:2px solid   #ffff00 ;
     padding: 20px;
-    margin:50px 10px 5px 10px ;
-   }
+    margin:50px 10px 10px 10px ;
+    box-shadow:1px 1px 20px 5px #d36c6c;
+    border-radius: 20px;
+
+}
+  
 .achivements_img{
   height: 170px;
   width: 170px;
-  margin:20px 6px 10px 5px;
+  margin:20px 15px 10px 13px;
 }
 .button{
   height: 30px;
@@ -47,5 +51,16 @@ height: 520px;
   border:2px solid black;
   margin: 20px 130px;
  border-radius: 35px;
-
+ box-shadow:1px 1px 9px 2px #fa8181;
+}
+.img_pavan
+{ height: 400px;
+width: 450px;
+margin: 20px 20px 10px  28px;
+}
+.text{
+  margin:10px;
+  text-align: justify;
+  padding: 10px;
+ 
 }
