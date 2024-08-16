@@ -9,44 +9,47 @@
         *{
              margin: 0;
              padding: 0; 
+             box-sizing: border-box;
         }
         .conatiner_home{
             height: 800px;
             width: 100%;
             background-image: url(./images/background\ img.jpg);
             background-size: cover;
-            background-position: 0cqh;
         }
         .container{
-             margin-top: 0px;
              height: 190px;
              width: 100%;
              flex-direction: row;
              display: flex;
              border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 10px;
+
         }
         .head{
              margin: 50px 0 0 0;
-             padding: 0 0 20px 0;
+             
         } 
         .navbar{
-             padding: 5px;
-             font-size: 20px;
+             padding: 15px;
              display: flex;
              text-align: start;
+             
         }
         #Nav{
              font-size: 17px;
-             margin:90px 0 0 17px;
+             margin:90px 0 0 10px; 
+             padding: 2px;
         }
         .img{
             height: 170px;
             width: 260px;
             margin-inline-start:-30px;
-            margin-top: -30px;
+            margin-top: -50px;
         }
         a{
-            color:wheat;
+            color:#fff;
             text-decoration: none;
         }
         a:hover{
@@ -110,11 +113,14 @@
         }
         .video{
             margin-left: 70px;
+            border: 5px solid orangered;
         }
         #img3{
             border: 5px solid orangered;
             height:300px;
             width:250px;
+            box-sizing: border-box;
+            
         }
         #Btn1{
             font-size: 20px;
@@ -214,7 +220,7 @@
 <body>
     <div class="conatiner_home">
     <div class="container">
-     <div class="head">
+     <div class="head" >
         <img src="../images/bgimg.png" alt="Rajmudra" class="img">
         </div>
         <!-------Navbars-------->
@@ -318,11 +324,13 @@
          </div>
          <div class="end_2">
             <div class="end_3">       
-                <p class="end_1">Sign in </p> 
+                <p class="end_1" style="margin-left: 240px;">Sign in </p> 
                 <p id="info_1"></p></p>
-                <input type="text" placeholder="your email" id="info_1">
+                <input type="text" placeholder="your email" id="info_1" style="border-radius: 5px; padding: 20px;">
                 <br/>
                 <button id="BTN_3" >Sign in</button>
     </footer>
 </body>
 </html>
+
+
