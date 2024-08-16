@@ -29,7 +29,7 @@ body{
 .contact-card{
     background-color: lightpink;
     width: 200px;
-    padding: 20px;
+    padding: 22px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px black;
@@ -41,16 +41,16 @@ body{
 }
 
 .contact-img{
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     padding: 10px;
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 .contact-btn{
     background-color: black;
     color: white;
-    padding: 2px 15px;
+    padding: 5px 15px;
     border-radius: 20px;
     display: block;
     margin: 2px auto;
@@ -128,5 +128,27 @@ body{
     height: 40px;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(197, 187, 187);    
+    background-color: rgb(202, 189, 189);
+    margin: 10px;
+    border: 1px solid black;
+
+    &:hover{
+        background-color: white;
+        border: 2px solid black;
+        
+    }
 }
+
+.select-state{
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(202, 189, 189);
+    border: 1px solid black;
+
+    &:hover{
+        background-color: white;
+        border: 2px solid black;
+    }
+}
+
