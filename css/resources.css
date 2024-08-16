@@ -1,7 +1,54 @@
+.vid{
+    height: 500px;
+    width: 1000px;
+    margin-left: 270px; 
+    margin-top:15px;
+    margin-bottom: 20px;
+}
 .S-vid{
     height: 500px;
     width: 1000px;
-    margin-left: 250px; 
-    margin-right: 20px;
-
+    border-radius: 70px;
+}
+.Main-Div{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+ .Sub-Div{
+      margin-top: 30px;
+      height: 400px;
+      width: 320px;
+      border-radius: 20px;
+      background-color: rgb(243, 224, 147);
+     
+ }
+ .Sub-Div:hover{
+  box-shadow:5px 5px 20px 3px black;
+  scale: 105%;
+ }
+ .img-div{
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+ }
+ .Para-Div{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+ }
+ .but{
+  width: 80px;
+  margin-top: 370px;
+  margin-right: 120px;
+  border-radius: 20px;
+  font-style: oblique;
+  transition: scale 200ms;
+  background-color:rgb(202, 192, 199);
+}
+.but:hover{
+  scale: 105%;
+  background-color: rgb(219, 172, 188);
+  color: aquamarine;
 }
