@@ -20,6 +20,7 @@ body{
   text-align: center;
   color: white;
  font-size: 50px;
+
 }
 .about-us:hover{
     font-size: 22px;
@@ -276,6 +277,15 @@ color: rgb(141, 110, 110);
     transition: 3s ease-in-out;
 
 }
+.footer-bottom {
+    margin-top: 5px;color: #c05a5a;text-align: center;background-color: #f6eaea;
+
+   
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
 .image5 { 
     display: block;
     margin-left: 40px;
