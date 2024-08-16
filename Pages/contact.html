@@ -1,67 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shivaji Maharaj details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/">
+    <title>Shivaji Maharaj Details</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-           
+            box-sizing: border-box;
         }
-        .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+        .container {
+            background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+            padding: 20px;
         }
-        .head{
+        .head {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
             padding: 10px;
         }
-        #Nav{
-            font-size: 17px;
-            margin-top: 100px;
-            margin-left: 20px;
+        .head img {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
         }
-        .img{
-            height: 200px;
-            width: 200px;
+        #Nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
         }
-        a{
+        #Nav a {
             color: beige;
             text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+            border-radius: 5px;
         }
-        a:hover{
-            color:black;
+        #Nav a:hover {
+            color: black;
+            background: rgba(255, 255, 255, 0.2);
         }
-        .img_1{
-          background-size: cover;
-          width: 1520px;
-        }
-        .para_1{
-
+        
+        .container_2 {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-     <div class="head">
-        <img src="../images/bgimg.png" alt="Rajmudra" class="img">
-        <p id="Nav"><a href="../index.html">HOME</a></p>
-        <p id="Nav"><a href="../Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="../Pages/histroy.html">HISTROY</a></p>
-        <p id="Nav"><a href="../Pages/gallary.html">GALLERY</a></p>
-        <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
-        <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
-        <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="">CONTACT US</a></p>
-     </div>
+        <div class="head">
+            <img src="../images/bgimg.png" alt="Rajmudra">
+            <nav id="Nav">
+                <a href="./../index.html">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="./../Pages/histroy.html">HISTORY</a>
+                <a href="./../Pages/gallary.html">GALLERY</a>
+                <a href="./../Pages/resources.html">RESOURCES</a>
+                <a href="./../Pages/fort.html">FORTS</a>
+                <a href="./../Pages/Cluture contribution.html">CULTURE CONTRIBUTION</a>
+                <a href="./../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a>
+                <a href="./../Pages/achivements.html">ACHIEVEMENTS</a>
+                <a href="./../Pages/contact.html">CONTACT US</a>
+            </nav>
+        </div>
     </div>
-    <div class="container_2">
-      <div class="text">
-    <img src="./images/shivaji.jpeg" alt="" class="img_1">
    
-  </div>
-  </div> 
-</body>
-</html>
+</div> 
