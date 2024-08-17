@@ -403,8 +403,8 @@ color: rgb(141, 110, 110);
         text-decoration-line: underline;
       }
       .join-us-font{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
         text-align: justify;
         font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -427,7 +427,7 @@ color: rgb(141, 110, 110);
         width:30px;
         border-radius: 50%;
        
-   padding: 10px;
+   padding: 6px;
    background: linear-gradient(to right,white,rgb(238, 238, 238) );
        border: white 3px solid;
      
