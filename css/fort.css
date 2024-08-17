@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -147,14 +148,51 @@ p {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media (max-width: 992px) {
     .card {
         width: calc(50% - 2rem);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .header-left img {
+        width: 50%;
+    }
+    
+    .header-center h1 {
+        font-size: 1.8em;
+    }
+    
     .card {
-        width: calc(100% - 2rem);
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .header-left img {
+        width: 40%;
+    }
+    
+    .header-center h1 {
+        font-size: 1.5em;
+    }
+    
+    .card {
+        width: calc(100% - 1rem);
+    }
+    
+    #Nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #Nav a {
+        padding: 8px 16px;
     }
 }

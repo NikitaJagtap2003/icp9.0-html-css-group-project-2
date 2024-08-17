@@ -9,44 +9,46 @@
         *{
              margin: 0;
              padding: 0; 
+             box-sizing: border-box;
         }
         .conatiner_home{
             height: 800px;
             width: 100%;
             background-image: url(./images/background\ img.jpg);
             background-size: cover;
-            background-position: 0cqh;
         }
         .container{
-             margin-top: 0px;
              height: 190px;
              width: 100%;
              flex-direction: row;
              display: flex;
              border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 10px;
         }
         .head{
              margin: 50px 0 0 0;
-             padding: 0 0 20px 0;
+             
         } 
         .navbar{
-             padding: 5px;
-             font-size: 20px;
+             padding: 15px;
              display: flex;
              text-align: start;
+             
         }
         #Nav{
              font-size: 17px;
-             margin:90px 0 0 17px;
+             margin:90px 0 0 10px; 
+             padding: 2px;
         }
         .img{
             height: 170px;
             width: 260px;
             margin-inline-start:-30px;
-            margin-top: -30px;
+            margin-top: -50px;
         }
         a{
-            color:wheat;
+            color:#fff;
             text-decoration: none;
         }
         a:hover{
@@ -56,7 +58,7 @@
             margin: 90px 0 0 140px;
             font-size: 75px;
             color: #ff3300;
-            font-family: "Dancing Script", cursive;;
+            font-family: "Dancing Script", cursive;
         }
         #para_2{
             font-size: 30px;
@@ -110,11 +112,20 @@
         }
         .video{
             margin-left: 70px;
+            border: 5px solid orangered;
+            height: 350px;
+            width: 620px;
+            margin: 60px 0 0 90px;
+            box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+            border-radius: 10px;
+            background-color: orangered;
         }
         #img3{
             border: 5px solid orangered;
             height:300px;
             width:250px;
+            box-sizing: border-box;
+            
         }
         #Btn1{
             font-size: 20px;
@@ -209,12 +220,37 @@
             border-radius: 10px;
             border-style: none;
         }
+        .second{
+        margin: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;   
+      }
+     .box1{
+        height: 250px;
+        width: 320px;
+        margin: 20px;
+        box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+        border-radius: 10px;
+        background-color: orangered;
+     }
+     .box1:hover{
+        background-color: #ff8533;
+     }
+     #user{
+        height: 250px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+     }
+    
     </style>
 </head>
 <body>
     <div class="conatiner_home">
     <div class="container">
-     <div class="head">
+     <div class="head" >
         <img src="../images/bgimg.png" alt="Rajmudra" class="img">
         </div>
         <!-------Navbars-------->
@@ -256,18 +292,29 @@
         <a href="./Pages/histroy.html"> <button id="Btn">Read More</button></a>
     </div>
      </div>
-     <div class="images">
-     <img src="./images/image4.jpeg" id="img3">
-     <img src="./images/img2.webp"id="img3" >
-     <img src="./images/img3.webp"id="img3">
-     <img src="./images/img4.webp" id="img3">
-     </div>
+     <h2 id="SERVICES">
+        
+       <div class="second">
+           <div class="box1">
+               <img src="./images/img1.jpg_large" alt="user" id="user">
+           </div>
+           <div class="box1">
+               <img src="./images/img2.webp" alt="user" id="user">
+           </div>
+           <div class="box1">
+               <img src="./images/img4.webp" alt="user" id="user">
+           </div>
+           <div class="box1">
+               <img src="./images/img3.webp" alt="user" id="user">
+           </div>
+       </div>
+       </div>
      <iframe width="660" height="415" src="https://www.youtube.com/embed/X-g0jIrBXQs?si=RLbSJmPDSTRF1JFf&amp;start=621" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe><iframe width="660" height="415" src="https://www.youtube.com/embed/OUZfht9c6pw?si=Mp3BGe7Td-cIJyKo&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
      <a href="./Pages/gallary.html"><button id="Btn1">Go To Gallery</button></a>
     </div>
     </div>
     </div>
-    <div class="vision">+
+    <div class="vision">
         <div class="vision_1">
             
      <h1>Vision of Chhatrapati Shivaji Maharaj:</h1>
@@ -318,11 +365,13 @@
          </div>
          <div class="end_2">
             <div class="end_3">       
-                <p class="end_1">Sign in </p> 
+                <p class="end_1" style="margin-left: 240px;">Sign in </p> 
                 <p id="info_1"></p></p>
-                <input type="text" placeholder="your email" id="info_1">
+                <input type="text" placeholder="your email" id="info_1" style="border-radius: 5px; padding: 20px;">
                 <br/>
                 <button id="BTN_3" >Sign in</button>
     </footer>
 </body>
 </html>
+
+
