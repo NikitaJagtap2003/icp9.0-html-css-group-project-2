@@ -1,6 +1,8 @@
 
 
-
+.background{
+  background-color:azure;
+}
 .text_center{
     text-align: center;
 }
@@ -16,13 +18,13 @@ width: 400px;
 height: 520px;
     border:2px solid orange;
     padding: 20px;
-    margin:50px 10px 10px 10px ;
+    margin:20px 10px 40px 10px ;
     box-shadow:1px 1px 15px 2px orangered;
     border-radius: 20px;
 
 }
 .achivements:hover{
-background-color: rgba(179, 175, 175, 0.4);
+background-color: rgba(121, 116, 116, 0.4);
 box-shadow:none;
 transition: 1s;
 }
@@ -43,6 +45,7 @@ transition: 1s;
   margin: 20px 130px;
   border-radius: 10px;
   border-style: none;
+  cursor: pointer;
 }
 .btn:hover{
   background-color: #ff6600;
@@ -55,9 +58,10 @@ transition: 1s;
 { height: 400px;
 width: 450px;
 margin: 20px 20px 10px  28px;
+border: 1px solid orangered;
 }
 .img_pavan:hover{
-  box-shadow:2px 2px 5px 10px #fa8181 ;
+  box-shadow:2px 2px 10px 5px orange;
   height: 420px;
   transition-duration: 1s;
 }
@@ -84,7 +88,7 @@ margin: 20px 20px 10px  28px;
   border-radius: 20px ;
   margin: 10px 10px 30px 10px;
   padding: 10px 10px 20px 10px;
-  box-shadow:1px 1px 20px 5px  rgba(0, 0, 0, 0.4);
+  box-shadow:1px 1px 15px 2px orangered;
 }
 .text_padding{
   padding: 20px 10px 10px 10px;
@@ -95,18 +99,22 @@ margin: 20px 20px 10px  28px;
 }
 .sub_headding_size{
   font-size: 25px;
+  color:#ff6600;
 }
 .text_size{
   font-size: 16px;
 }.text_padding1{
   padding: 10px 380px;
-  color: black
+  color:orange;
 }
 .text_padding2{
   padding: 10px 530px;
-  color:black;
+  color:orange;
 }
 .text_padding3{
   padding: 10px 368px;
-  color:black;
+  color:orange;
+}
+.sub_headding_color{
+  
 }
