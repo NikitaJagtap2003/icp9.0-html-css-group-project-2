@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,7 +30,7 @@ header {
 
 .header-left img {
     height: 60px;
-    width: 70%;
+    width: auto;
 }
 
 .header-center {
@@ -47,14 +48,14 @@ header {
 /* Navigation Bar Styles */
 .head {
     background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
+    padding: 1px 0;
     font-weight: bold;
 }
 
 #Nav {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -64,7 +65,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 #Nav a:hover {
@@ -86,11 +87,17 @@ h3 {
 
 p {
     margin: 0 0 1rem 0;
-    font-size: 1rem;
-    background: rgba(0, 0, 0, 0.4);
-    color: rgb(228, 215, 215);
     font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(228, 215, 215);
     font-weight: bold;
+}
+
+/* Intro Styles */
+.intro {
+    font-family: "Bodoni Moda SC", serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* Card Styles */
@@ -147,14 +154,51 @@ p {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media (max-width: 992px) {
     .card {
         width: calc(50% - 2rem);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .header-left img {
+        width: 50%;
+    }
+    
+    .header-center h1 {
+        font-size: 1.8em;
+    }
+    
     .card {
-        width: calc(100% - 2rem);
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .header-left img {
+        width: 40%;
+    }
+    
+    .header-center h1 {
+        font-size: 1.5em;
+    }
+    
+    .card {
+        width: calc(100% - 1rem);
+    }
+    
+    #Nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #Nav a {
+        padding: 8px 16px;
     }
 }

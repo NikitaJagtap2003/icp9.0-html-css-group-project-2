@@ -12,6 +12,15 @@ body{
      border-style: solid;
      padding: 5px;
    }*/
+   .footer-bottom {
+    margin-top: 5px;color: #c05a5a;text-align: center;background-color: #f6eaea;
+   
+   
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
  
  body:hover{
  background-image:url("./../../images/about_imgs/shiwajimaharajbackground2.jpg");
@@ -106,8 +115,8 @@ body{
      padding: 5px 12px;
    /*  background-image: linear-gradient(to right top, #6cd2f8, hsl(204, 91%, 69%), #52cffe, #41dfff, #46eefa);
    */
-   background-image: linear-gradient(to right top,  #9a9ae1, #8aa7ec,#8aa7ec, 
-    hsl(204, 91%, 69%),  #41dfff);
+   background-image: linear-gradient(to right top,   #8aa7ec,#8aa7ec, 
+    hsl(204, 91%, 69%),  #5ee4ff);
    
    
    border-radius: 10px;
