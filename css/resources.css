@@ -12,7 +12,6 @@
 }
 .Main-Div{
   display: flex;
-  text-align: center;
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
@@ -21,8 +20,8 @@
       height: 400px;
       width: 320px;
       border-radius: 20px;
-      background-color: rgb(243, 224, 147);
-     
+      background-color: rgb(238, 226, 182);
+     transition: 0.5s;
  }
  .Sub-Div:hover{
   box-shadow:5px 5px 20px 3px black;
@@ -37,18 +36,36 @@
  .Para-Div{
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
+  margin-left: 20px;
+  font-size: large;
+  font-style: bold;
  }
  .but{
   width: 80px;
-  margin-top: 370px;
-  margin-right: 120px;
-  border-radius: 20px;
+  border-radius:20px;
   font-style: oblique;
   transition: scale 200ms;
-  background-color:rgb(202, 192, 199);
+  background-color: rgb(229, 203, 100);
+  margin-left: 200px;
+  margin-top: 10px;
 }
 .but:hover{
   scale: 105%;
-  background-color: rgb(219, 172, 188);
-  color: aquamarine;
+  background-color: rgb(231, 211, 79);
+  color:#000000;
+}
+.marquee{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(238, 231, 205);
+}
+.marquee1{
+  margin-top:5px;
+  font-size: 45px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color:  rgb(102, 101, 99);
+
 }
