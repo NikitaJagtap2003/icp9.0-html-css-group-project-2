@@ -107,10 +107,11 @@ body:hover{
    /*  background-image: linear-gradient(to right top, #6cd2f8, hsl(204, 91%, 69%), #52cffe, #41dfff, #46eefa);
    */
    background-image: linear-gradient(to right top,   #8aa7ec,#8aa7ec, 
-   hsl(204, 91%, 69%),  #5ee4ff);
+   hsl(204, 91%, 69%),  #30dcff);
    border-radius: 10px;
    border: 1.7px  #fcdcee solid;
    cursor: pointer;
+   font-size: 18px;
  }
  .btn6:hover{
     padding: 5px 10px;
