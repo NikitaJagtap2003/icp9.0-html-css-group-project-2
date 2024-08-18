@@ -40,14 +40,14 @@ header {
 
 .header-center h1 {
     font-size: 2.2em;
-    background: rgba(132, 109, 109, 0.8);
+    background: #f6894b;
     padding: 10px;
     margin: 0;
 }
 
 /* Navigation Bar Styles */
 .head {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 1px 0;
     font-weight: bold;
 }
@@ -93,9 +93,9 @@ p {
     font-weight: bold;
 }
 .fdesc{
-    background-color: #f1d07380;
+    background: rgba(0, 0, 0, 0.5);
     /* border-radius: 3%; */
-    color: rgb(12, 10, 52);
+    color: rgba(220, 217, 226, 0.916);
 }
 /* Intro Styles */
 .intro {
