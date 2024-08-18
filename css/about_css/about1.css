@@ -7,7 +7,8 @@ body{
  background-color: #fef8fe;
 background-image: linear-gradient(to right,#fffaff , #fff8ff ,#f4eef4 ,#ffffff , #f3ffff, #eaf4f6 ,#fafdfe,#ffffff  );*/
 background-color: rgb(255, 255, 255);
-background-image: linear-gradient(to right,#ffffff,#ffffff, #fcedeb , #ffffff ,#ffffff);
+background-image: linear-gradient(to right,#ffffff,#ffffff, 
+#fdf3f1 , #ffffff ,#ffffff);
 
 
  
@@ -165,11 +166,11 @@ background-image: linear-gradient(to right,#ffffff,#ffffff, #fcedeb , #ffffff ,#
     font-size: 38px;
     font-weight: lighter
     ;
-    color:  rgb(255, 112, 60);
+    color:  rgb(255, 126, 79);
     text-align: center;
 }
 .heading:hover{
-    color:rgb(130, 94, 94);cursor: pointer;
+    color: orangered;;cursor: pointer;
 }
 .image { 
     margin-right: 80px;
