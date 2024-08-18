@@ -50,10 +50,14 @@ India contains no more than two great powers, British and Maratha, and every oth
 The Marathas remained the pre-eminent power in India until their defeat by the British in the Second and Third Anglo-Maratha wars (1805–1818), which left the company the dominant power in most of India.
 
 # Seal
- ######  ![alt text](image.png) 
+ ######  ![alt text](./images/Rajmudra%20Image.jpeg) 
  Seals were a means to confer authenticity on official documents. Shahaji and Jijabai had Persian seals. But Shivaji, right from the beginning, used Sanskrit for his seal.The seal proclaims: "This seal of Shiva, son of Shah, shines forth for the welfare of the people and is meant to command increasing respect from the universe like the first phase of the moon."
 
   # Images
-  ![alt text](image-1.png)
+  ![alt text](./images/images1.jpg)
+  ![alt text](./images/shahaji.jpg)
+  ![alt text](./images/balshivaji.jpg)
+  ![alt text](./images/afzalkhan.jpg)
+
   #
 
