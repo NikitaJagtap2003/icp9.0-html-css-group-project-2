@@ -55,9 +55,8 @@ The Marathas remained the pre-eminent power in India until their defeat by the B
 
   # Images
   ![alt text](./images/images1.jpg)
-  ![alt text](./images/shahaji.jpg)
   ![alt text](./images/balshivaji.jpg)
-  ![alt text](./images/afzalkhan.jpg)
+ 
 
   #
 
