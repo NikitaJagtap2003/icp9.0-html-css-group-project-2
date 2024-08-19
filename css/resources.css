@@ -69,3 +69,97 @@
   color:  rgb(102, 101, 99);
 
 }
+footer{
+  display: flex;
+  height: 300px;
+  background-size: cover;
+  border: 2px solid #000033;
+ background-color: #ff3300;
+ color: #000033;
+  height: 300px; 
+}
+.end_1{
+  font-size: 20px;
+  margin: 50px 0 0 150px;
+  font-weight: 900;
+  display: flex; 
+}
+#highlight{
+  color: #000033;
+}
+#info_1{
+  margin: 10px 0 0 150px ;
+  font-size: 20px;
+  color:burlywood;
+}
+#location{
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+#info_2{
+  margin: 0 0 0 10px ;
+  font-size: 20px;
+  color: blanchedalmond;
+}
+#location1{
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  padding: 5px;
+}
+.img3{
+  margin-left: 130px;
+}
+.map{
+  width: 300px;
+  margin-top: 5px;
+  margin-left: 70px;
+}
+span{
+  font-size: 20px;
+  color: blanchedalmond;
+}
+#BTN{
+  font-size: 20px;
+  color:wheat;
+  background-color: #000033;
+  margin: 10px 0 0 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+#BTN_3{
+  font-size: 20px;
+  color:wheat;
+  background-color: #000033;
+  margin: 10px 0 0 240px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+.second{
+margin: 60px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;   
+}
+.box1{
+height: 250px;
+width: 320px;
+margin: 20px;
+box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+border-radius: 10px;
+background-color: orangered;
+}
+.box1:hover{
+background-color: #ff8533;
+}
+#user{
+height: 250px;
+width: 300px;
+padding: 10px;
+border-radius: 20px;
+display: block;
+}
