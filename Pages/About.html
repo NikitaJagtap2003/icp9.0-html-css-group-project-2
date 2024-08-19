@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/about_css/about.css">
-    <title>Shivaji Maharaj Details</title>
+    <link rel="icon" type="image/jpg" href="./../Pages/11111111.jpg">
+    <title>About Us</title>
     <style>
+.container{
+          position: absolute;
+           top: 0;
+            left: 0;
+             height: 100px;
+             width: 100%;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             
+        }
+        .head{
+             margin: 20px 0 0 0;
+        } 
+        .navbar{
+             display: flex;
+             text-align: start; 
+        }
+        #Nav{
+             font-size: 17px;
+             margin:40px 0 0 10px;
+        }
+        .img{
+            height: 80px;
+            width: 150px;
+            padding-left: 60px;
+            margin-inline-start:-40px;
+            margin-top: -10px;margin-right: 50px;
+        }
+        a{
+               
+            color:#fff;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ff6600;
+        }
+        .margin{
+            margin-left: 5px;
+        }
+
+
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;  
+            box-sizing: border-box;
         }
         .container {
-            position: static;
-            padding-left: 20px;
-            padding-top: 2px;  
+          
+            padding: 20px;
         }
         .head {
             display: flex;
@@ -26,68 +70,52 @@
         .head img {
             height: 100px;
             width: auto;
-            margin-right: 25px;
+            margin-right: 20px;
         }
         #Nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
+            gap: 1px;
             list-style: none;
         }
-        .color1{
-            color: #fedede;
+        #Nav a {
+            color: beige;
             text-decoration: none;
             font-size: 17px;
-            padding: 3.5px 5px;
+            padding: 12px;
             border-radius: 5px;
         }
-        .Nava{
-            color: white;
-            text-decoration: none;
-            font-size: 17px;
-            padding: 3px 1px;     
-            margin-left: 12px;    
-            border-radius: 5px;
-        }
-        .Nava:hover {
-            color: #c05a5a;
+        #Nav a:hover {
+            color: black;
          
         }
-        .color{
-            color: #d17575;
-            background-color: #fedede;
-            text-decoration: none;
-            font-size: 17px;
-            padding: 3px 5px;
-            border-radius: 5px;
-        }
+        
         .container_2 {
             padding: 20px;
-        } 
+        }*/
+        
     </style>
 </head>
 <body>
+<div class="conatiner_home">
     <div class="container">
-       
-            <nav id="Nav">
-
-                <div class="head">
-                    <img src="../images/bgimg.png" alt="Rajmudra">
-                <a href="../index.html">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="./../Pages/history.html">HISTORY</a>
-                <a href="./../Pages/gallery.html">GALLERY</a>
-                <a href="./../Pages/resources.html">RESOURCES</a>
-                <a href="./../Pages/fort.html">FORTS</a>
-                <a href="./../Pages/Culture_contribution.html">CULTURE CONTRIBUTION</a>
-                <a href="./../Pages/Associates_and_allies.html">FAMOUS ASSOCIATES & ALLIES</a>
-                <a href="./../Pages/achievements.html">ACHIEVEMENTS</a>
-                <a href="./../Pages/contact.html">CONTACT US</a>
-            </nav>
+     <div class="head" >
+        <img src="../images/bgimg.png" alt="Rajmudra" class="img"><span></span>
         </div>
+        <!-------Navbars-------->
+        <div class="navbar">
+        <p id="Nav"><a href="./../index.html" class="margin">HOME</a></p>
+        <p id="Nav"><a href="#" style="color: #ff6600;"class="margin">ABOUT</a></p>
+        <p id="Nav"><a href="./../pages/histroy.html"class="margin">HISTROY</a></p>
+        <p id="Nav"><a href="./../pages/gallery.html"class="margin">GALLERY</a></p>
+        <p id="Nav"><a href="./../pages/resources.html"class="margin">RESOURES</a></p>
+        <p id="Nav"><a href="./../pages/fort.html"class="margin">FORTS</a></p>
+        <p id="Nav"><a href="./../pages/Cluture contribution.html"class="margin">CLUTURE CONTRIBUTION</a></p>
+        <p id="Nav"><a href="./../pages/Assocites and allies.html"class="margin">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="./../pages/achivements.html"class="margin">ACHIVEMENTS</a></p>
+        <p id="Nav"><a href="./../pages/contact.html"class="margin">CONTACT US</a></p>
     </div>
-   
-</div> 
+  </div>
 <center>
 <div class="about-continer ">
     <div class="image">
