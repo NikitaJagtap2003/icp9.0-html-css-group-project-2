@@ -1,66 +1,66 @@
-    /* Base Styles */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        background-image: url(/images/fort_img/fort_backgraund.jpg);
-        background-size: cover;
-        background-position: center;
-    }
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(/images/fort_img/fort_backgraund.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-    header {
-        background-color: transparent;
-        color: white;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
+header {
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
-    .header-left {
-        position: relative;
-        padding-left: 10px;
-        display: flex;
-        align-items: center;
-        padding-right: 1rem; /* Adds space between logo and nav links */
-    }
-    
-    .header-left img {
-        height: 50px;
-        width: auto;
-        vertical-align: middle;
-    }
+.header-left {
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem; /* Adds space between logo and nav links */
+}
 
-    .header-center {
-        flex: 1;
-        text-align: center;
-    }
+.header-left img {
+    height: 70px;
+    width: auto;
+    vertical-align: middle;
+}
 
-    .header-center h1 {
-        font-size: 2.2em;
-        background: #f6894b;
-        padding: 10px;
-        margin: 0;
-    }
+.header-center {
+    flex: 1;
+    text-align: center;
+}
 
-    /* Navigation Bar Styles */
-    .head {
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1px 0;
-        font-weight: bold;
-    }
+.header-center h1 {
+    font-size: 2.2em;
+    background: #f6894b;
+    padding: 10px;
+    margin-left: 10px;
+}
 
-/* Updated Navigation Bar Styles */
+/* Navigation Bar Styles */
+.head {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1px 0;
+    font-weight: bold;
+}
+
+
 #Nav {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 1rem; /* Reduced gap to fit more links */
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin-right: 50px;
     list-style: none;
 }
 
@@ -68,14 +68,15 @@
     white-space: nowrap; /* Prevent links from breaking onto multiple lines */
     color: white;
     text-decoration: none;
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    padding: 30px 12px; /* Adjust padding to fit more links */
+    font-size: .8rem; /* Adjust font size for smaller screens */
+    padding: 20px 4px; /* Adjust padding to fit more links */
 }
 
 #Nav a:hover {
     background-color: #7d624e;
     border-radius: 5px;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 576px) {
@@ -89,158 +90,145 @@
     }
 }
 
+/* Main Styles */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    /* Main Styles */
-    main {
-        padding: 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
+h3 {
+    color: #333;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.fdesc {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(220, 217, 226, 0.916);
+}
+
+/* Intro Styles */
+.intro {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Card Styles */
+.fort-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background: rgba(238, 180, 101, 1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.desc {
+    color: rgb(11, 11, 58);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h4 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.card a {
+    text-decoration: none;
+    color: #787878;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-left img {
+        width: 50%;
     }
 
-    h3 {
-        color: #333;
-        padding-bottom: 0.5rem;
-    }
-
-    p {
-        margin: 0 0 1rem 0;
-        font-size: 1.2em;
-        /* background: rgba(0, 0, 0, 0.6); */
-        /* color: rgb(228, 215, 215); */
-        font-weight: bold;
-    }
-    .fdesc{
-        background: rgba(0, 0, 0, 0.5);
-        /* border-radius: 3%; */
-        color: rgba(220, 217, 226, 0.916);
-    }
-    /* Intro Styles */
-    .intro {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-    }
-
-    /* Card Styles */
-    .fort-cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        padding: 1rem;
+    .header-center h1 {
+        font-size: 1.8em;
     }
 
     .card {
-        background: rgba(238, 180, 101, 1);
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: calc(25% - 2rem);
-        margin: 1rem;
-        overflow: hidden;
-        text-align: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        /* color: rgb(255, 0, 0); */
+        width: calc(50% - 1rem);
+    }
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+    .header-left img {
+        width: 40%;
     }
 
-    .desc{
-        color: rgb(11, 11, 58);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .header-center h1 {
+        font-size: 1.5em;
     }
 
-    .card img {
-        width: 100%;
-        height: auto;
-        border-bottom: 1px solid #ddd;
+    .card {
+        width: calc(100% - 1rem);
     }
 
-    .card h4 {
-        margin: 0.5rem 0;
-        font-size: 1.25rem;
-        color: #fff;
+    #Nav {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
-    .card a {
-        text-decoration: none;
-        color: #787878;
-        font-weight: bold;
+    #Nav a {
+        padding: 8px 16px;
     }
-
-    .card a:hover {
-        text-decoration: underline;
-    }
-
-    .card p {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-
-    @media (max-width: 576px) {
-        #Nav {
-            gap: 0.5rem; /* Further reduce gap on small screens */
-        }
-    
-        #Nav a {
-            font-size: 0.9rem; /* Reduce font size slightly for better fit */
-            padding: 6px 10px; /* Reduce padding slightly */
-        }
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 1200px) {
-        .card {
-            width: calc(33.33% - 2rem);
-        }
-    }
-
-    @media (max-width: 992px) {
-        .card {
-            width: calc(50% - 2rem);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .header-left img {
-            width: 50%;
-        }
-        
-        .header-center h1 {
-            font-size: 1.8em;
-        }
-        
-        .card {
-            width: calc(50% - 1rem);
-        }
-    }
-    h2{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 2rem;
-    }
-    @media (max-width: 576px) {
-        .header-left img {
-            width: 40%;
-        }
-        
-        .header-center h1 {
-            font-size: 1.5em;
-        }
-        
-        .card {
-            width: calc(100% - 1rem);
-        }
-        
-        #Nav {
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        #Nav a {
-            padding: 8px 16px;
-        }
-    }
+}
