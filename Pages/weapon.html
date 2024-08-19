@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapon of Chatrapati Shivaji Maharaj</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 28px;
+            margin: 30px 0;
+            font-weight: bold;
+            color: #4a148c;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Set a normal gap between images */
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .box img {
+            width: 350px; /* Increased size of images */
+            height: 460px; /* Fixed height to maintain aspect ratio */
+            object-fit: cover;
+            border: 2px solid #7d4c7c;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .img{
+           width: 380px;
+           height: 300px;
+           display: block;
+           margin: 10px auto;
+           border:4px double black;
+           border-radius: 30px;
+           display: flex;
+           gap: 0px;
+}
+        .featured-img{
+            border: 3px double black;
+            border-radius: 30px;
+        }
+        .img:hover{
+            filter: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weapon of Chatrapati Shivaji Maharaj</h1>
+    <div class="box">
+        <img src="../images/weapon-1.jpg" alt="weapon-1"/> 
+        <img src="../images/weapon-2.jpg" alt="weapon-2"/> 
+    </div>
+
+    <div class="box">
+        <img src="../images/weapon-3.jpg" alt="weapon-3"/> 
+        <img src="../images/weapon-4.jpg" alt="weapon-4"/> 
+    </div>
+
+    <div class="box">
+        <img src="../images/weapon-6.webp" alt="weapon-6"/> 
+        <img src="../images/weapon-7.jpg" alt="weapon-7"/> 
+    </div>
+
+    <div class="box">
+        <img src="../images/weapon-8.jpg" alt="weapon-8"/> 
+        <img src="../images/weapon-9.png" alt="weapon-9"/> 
+    </div>
+</div>
+</body>
+</html>

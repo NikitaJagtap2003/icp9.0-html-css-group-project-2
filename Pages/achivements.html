@@ -8,73 +8,78 @@
             padding: 0;
            
         }
-        .head {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 10px;
+        .container{
+             height: 180px;
+             width: 100%;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 10px;
         }
-        .head img {
+        .head{
+             margin: 50px 0 0 0;
+        } 
+        .navbar{
+             display: flex;
+             text-align: start; 
+        }
+        #Nav{
+             font-size: 17px;
+             margin:80px 0 0 10px;
+        }
+        .img{
             height: 100px;
-            width: auto;
-            margin-right: 25px;
+            width: 200px;
+            margin-inline-start:-40px;
+            margin-top: -20px;
         }
-        #Nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1px;
-            list-style: none;
-        }
-       
-        .container {
-          position: static;
-          padding-left: 10px;
-          padding-right: 10px;
-        padding-top: 2px;
-      
-            
-        }
-        
-        a {
-            color: beige;
+        a{
+            color:#fff;
             text-decoration: none;
-            font-size: 17px;
-            padding: 7px;
-            border-radius: 5px;
         }
         a:hover{
-            color:orange;
-        } </style>
+            color:#ff6600;
+        }
+    </style>
 </head>
 <link href="./../css/achivements.css" rel="stylesheet">
 <link href="./../images/bgimg.png"  rel="icon" type="images/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <body class="background">
+  <div class="conatiner_home">
     <div class="container">
-     <div class="head">
-        <img src="../images/bgimg.png" alt="Rajmudra" class="img">
+     <div class="head" >
+        <img src="../images/bgimg.png" alt="Rajmudra" class="img"><span></span>
+        </div>
+        <!-------Navbars-------->
+        <div class="navbar">
         <p id="Nav"><a href="../index.html">HOME</a></p>
-        <p id="Nav"><a href="../Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="../Pages/histroy.html">HISTROY</a></p>
-        <p id="Nav"><a href="../Pages/gallary.html">GALLERY</a></p>
-        <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
-        <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
-        <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="#">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
-        <h1 class="text_center headding_size  text_padding3">ACHIVEMENTS OF CHATRAPATI SHIVAJI MHARAJ</h1>
-     </div>
+        <p id="Nav"><a href="./pages/about.html">ABOUT</a></p>
+        <p id="Nav"><a href="./pages/histroy.html">HISTROY</a></p>
+        <p id="Nav"><a href="./pages/gallery.html">GALLERY</a></p>
+        <p id="Nav"><a href="./pages/resources.html">RESOURES</a></p>
+        <p id="Nav"><a href="./pages/fort.html">FORTS</a></p>
+        <p id="Nav"><a href="./pages/cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
+        <p id="Nav"><a href="./pages/assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="#"><b style="color:orangered; font-weight: 900px;">ACHIVEMENTS</b></a></p>
+        <p id="Nav"><a href="./pages/contact.html">CONTACT US</a></p>
     </div>
-    <img src="./../images/achivements/purandar.jpg" width="1515 px" height="500px">
+    </div>
+        <h1 class="text_center headding_size  text_padding3 headding_familay">ACHIVEMENTS OF CHATRAPATI SHIVAJI MAHARAJ</h1>
+    <img src="./../images/achivements/purandar.jpg" class="main_img">
    
-      <h3 class="text_center text_padding headding_size">INDIAN NAVY</h3>
-     <p class="navy text text_size">
+      <h3 class="text_center text_padding headding_size headding_familay">INDIAN NAVY</h3>
+    <div class="navy">
         <img src="./../images/achivements/navy.jpg" class="navy_img">
         <img src="./../images/achivements/navy1.jpg" class="navy_img">
         <img src="./../images/achivements/navy2.jpg" class="navy_img">
         <img src="./../images/achivements/navy3.jpg" class="navy_img">
         <img src="./../images/achivements/navy4.jpg" class="navy_img"><br>
+        <p class=" text text_size">
         Chhatrapati Shivaji Maharaj is considered the father of Indian Navy. This title was given to the great Maratha Emperor in honor of his contribution to the Middle Ages’ growth of the Indian army’s naval branch. Chhatrapati Shivaji Maharaj constructed multiple naval bases near the coast after realizing the value of the naval wing.
 
         The father of Indian Navy, Chhatrapati Shivaji Maharaj, was born on February 19, 1630, in Shivneri, Pune. Here, we will discuss the life, naval achievements, and enduring legacy of Shivaji Maharaj as a key figure in shaping the Indian Navy.
@@ -93,59 +98,61 @@
         Legacy of Father of Indian Navy
         Shivaji Maharaj’s naval legacy continues to inspire the Indian Navy and maritime enthusiasts. His strategic vision and establishment of a strong naval force laid the foundation for future naval endeavors in India. His emphasis on maritime power, coastal fortifications, and naval administration created a blueprint for India’s naval growth and influence in subsequent centuries.
         
-        Shivaji Maharaj established a well-structured naval administration system to oversee the operations of the naval fleet. He encouraged maritime trade, boosting economic prosperity in his kingdom. Under his rule, efficient naval administration, maritime laws, and policies were formulated to ensure the safety of trade routes and promote maritime commerce</p>
+        Shivaji Maharaj established a well-structured naval administration system to oversee the operations of the naval fleet. He encouraged maritime trade, boosting economic prosperity in his kingdom. Under his rule, efficient naval administration, maritime laws, and policies were formulated to ensure the safety of trade routes and promote maritime commerce
+        </p></div>
     </div><hr>
-   <h3 class="text_center text_padding headding_size">  ACHIVEMENTS IN BATTLES </h3>
+   <h3 class="text_center text_padding headding_size headding_familay">  ACHIVEMENTS IN BATTLES </h3>
   <div class="achivements_container">
   <div class="achivements">
-   <h2 class="text_center sub_headding_size"> Siege of Panhala</h2>
+   <h2 class="text_center sub_headding_size headding_familay"> Siege of Panhala</h2>
    <img src="./../images/achivements/panhala1.jpg" class="achivements_img">
    <img src="./../images/achivements/panahala.jpeg" class="achivements_img"><br><p class="text_size">
-   Having defeated the Bijapuri forces sent against him, Shivaji and his army marched towards the Konkan coast and Kolhapur, seizing Panhala fort, and defeating Bijapuri forces sent against them, under Rustam Zaman and Fazl Khan, in 1659. In 1660, Adilshah sent his general Siddi Jauhar to attack Shivaji's southern border, in alliance with the Mughals who planned to attack from the north. At that time, Shivaji was encamped at Panhala fort with his forces. Siddi Jauhar's army besieged Panhala in mid-1660, cutting off supply routes to the fort. During the bombardment of Panhala, Siddi Jauhar purchased grenades from the English at Rajapur, and also hired some English artillerymen to assist in his bombardment of the fort, conspicuously flying a flag used by the English.</p>
-   <a href="./../Pages/achivements1.html #Siege of Panhala "><button class="btn">learn more </button></a></div>
+   Having defeated the Bijapuri forces sent against him, Shivaji and his army marched towards the Konkan coast and Kolhapur, seizing Panhala fort, and defeating Bijapuri forces sent against them, under Rustam Zaman and Fazl Khan, in 1659. In 1660, Adilshah sent his general Siddi Jauhar to attack Shivaji's southern border, in alliance with the Mughals who planned to attack from the north. At that time, Shivaji was encamped at Panhala fort with his forces. Siddi Jauhar's army besieged Panhala in mid-1660, cutting off supply routes to the fort. During the bombardment of Panhala, Siddi Jauhar purchased grenades from the English at Rajapur,  conspicuously flying a flag used by the English.</p>
+   <a href="./../pages/achivements1.html #Siege of Panhala "><button class="btn">learn more </button></a></div>
    <div class="achivements">
-    <h2 class="text_center sub_headding_size"> Pavan Khind</h2>
+    <h2 class="text_center sub_headding_size headding_familay"> Pavan Khind</h2>
     <img src="./../images/achivements/pavan.jpeg" class="achivements_img">
     <img src="./../images/achivements/pavan_khind1.jpeg" class="achivements_img"><br>
-    <p>
+    <p class="text_size">
     Shivaji escaped from Panhala by cover of night, and as he was pursued by the enemy cavalry, his Maratha sardar Baji Prabhu Deshpande of Bandal Deshmukh, along with 300 soldiers, volunteered to fight to the death to hold back the enemy at Ghod Khind ("horse ravine") to give Shivaji and the rest of the army a chance to reach the safety of the Vishalgad fort.
-    Baji Prabhu Deshpande was wounded but continued to fight until he heard the sound of cannon fire from Vishalgad,signalling Shivaji had safely reached the fort, on the evening of 13 July 1660.Ghod Khind (khind meaning "a narrow mountain pass") was later renamed Paavan Khind ("sacred pass") in honour of Bajiprabhu Deshpande, Shibosingh Jadhav, Fuloji, fought there.</p>
-    <a href="./../Pages/achivements1.html #Battle of Pavan Khind"><button class="btn">learn more </button></a>
+    Baji Prabhu Deshpande was wounded but continued to fight until he heard the sound of cannon fire from Vishalgad,signalling Shivaji had safely reached the fort, on the evening of 13 July 1660.Ghod Khind (khind meaning "a narrow mountain pass") was later renamed Paavan Khind ("sacred pass") in honour of Bajiprabhu Deshpande.</p>
+    <a href="./../pages/achivements1.html #Battle of Pavan Khind"><button class="btn">learn more </button></a>
     </div>
     <div class="achivements">
-        <h2 class="text_center sub_headding_size"> Arrest in Agra and escape</h2>
-        <p>
+        <h2 class="text_center sub_headding_size headding_familay"> Arrest in Agra and escape</h2>
+      
         <img src="./../images/achivements/agra1.jpeg" class="achivements_img">
         <img src="./../images/achivements/agra.jpg" class="achivements_img"><br>
+        <p class="text_size">
         20th century depiction by M.V. Dhurandhar of Raja Shivaji at the court of Mughal Badshah, Aurangzeb.
-        In 1666, Aurangzeb summoned Shivaji to Agra (though some sources instead state Delhi), along with his nine-year-old son Sambhaji. Aurangzeb planned to send Shivaji to Kandahar, now in Afghanistan, to consolidate the Mughal empire's northwestern frontier. However, on 12 May 1666, Shivaji was made to stand at court alongside relatively low-ranking nobles, men he had already defeated in battle.Shivaji took offence, stormed out,and was promptly placed under house arrest. Ram Singh, son of Jai Singh, guaranteed custody of Shivaji and his son.Shivaji's position under house arrest was perilous, as Aurangzeb's court debated whether to kill him or continue to employ him.</p>
-        <a href="./../Pages/achivements1.html #Arrest in Agra and escape"><button class="btn">learn more </button></a>
+        In 1666, Aurangzeb summoned Shivaji to Agra (though some sources instead state Delhi), along with his nine-year-old son Sambhaji. Aurangzeb planned to send Shivaji to Kandahar, now in Afghanistan, to consolidate the Mughal empire's northwestern frontier. However, on 12 May 1666, Shivaji was made to stand at court alongside relatively low-ranking nobles, men he had already defeated in battle.Shivaji took offence, stormed out,and was promptly placed under house arrest. Ram Singh, son of Jai Singh, guaranteed custody of Shivaji and his son.Shivaji's position under house arrest was perilous.</p>
+        <a href="./../pages/achivements1.html #Arrest in Agra and escape"><button class="btn">learn more </button></a>
         </div> 
         <div class="achivements">
-            <h2 class="text_center sub_headding_size">Combat with Afzal Khan</h2>
+            <h2 class="text_center sub_headding_size headding_familay">Combat with Afzal Khan</h2>
             <img src="./../images/achivements/Afzal_Khan.jpg" class="achivements_img">
             <img src="./../images/achivements/Pratapgad.jpg" class="achivements_img"><br>
             <p class="text_size">
             The Bijapur sultanate was displeased with their losses to Shivaji's forces, with their vassal Shahaji disavowing his son's actions. After a peace treaty with the Mughals, and the general acceptance of the young Ali Adil Shah II as the sultan, the Bijapur government became more stable, and turned its attention towards Shivaji.In 1657, the sultan, or more likely his mother and regent, sent Afzal Khan, a veteran general, to arrest Shivaji. Before engaging him, the Bijapuri forces desecrated the Tulja Bhavani Temple, a holy site for Shivaji's family, and the Vithoba temple at Pandharpur, a major pilgrimage site for Hindus.Pursued by Bijapuri forces, Shivaji retreated to Pratapgad fort, where many of his colleagues pressed him to surrender</p> 
-            <a href="./../Pages/achivements1.html #Combat with Afzal Khan"><button class="btn">learn more </button></a>
+            <a href="./../pages/achivements1.html #Combat with Afzal Khan"><button class="btn">learn more </button></a>
             </div>  
             <div class="achivements padding">
-                <h2 class="text_center sub_headding_size" > Attacks on Shaista Khan and Surat</h2>
+                <h2 class="text_center sub_headding_size headding_familay" > Attacks on Shaista Khan and Surat</h2>
                 <img src="./../images/achivements/surat4.jpeg" class="achivements_img">
                 <img src="./../images/achivements/Shaistekhan.jpg" class="achivements_img"><br><p class="text_size">
                     A 20th century depiction of Shivaji's surprise attack on Mughal general Shaista Khan in Pune .
-                    At the request of Badi Begum of Bijapur, Aurangzeb, now the Mughal emperor, sent his maternal uncle Shaista Khan, with an army numbering over 150,000, along with a powerful artillery division, in January 1660 to attack Shivaji in conjunction with Bijapur's army led by Siddi Jauhar. Shaista Khan, with his better equipped and well provisioned army of 80,000 seized Pune. He also took the nearby fort of Chakan, besieging it for a month and a half before breaching the walls.He established his residence at Shivaji's palace of Lal Mahal.
-                    On the night of 5 April 1663, Shivaji led a daring night attack on Shaista Khan's camp.
-                </p><a href="./../Pages/achivements1.html #Attacks on Shaista Khan and Surat"><button class="btn">learn more </button></a>
+                    At the request of Badi Begum of Bijapur, Aurangzeb, now the Mughal emperor, sent his maternal uncle Shaista Khan, with an army numbering over 150,000, along with a powerful artillery division, in January 1660 to attack Shivaji in conjunction with Bijapur's army led by Siddi Jauhar. Shaista Khan, with his better equipped and well provisioned army of 80,000 seized Pune. He also took the nearby fort of Chakan, besieging it for a month and a half before breaching the walls.
+                   
+                </p><a href="./../pages/achivements1.html #Attacks on Shaista Khan and Surat"><button class="btn">learn more </button></a>
                 </div> 
                 <div class="achivements ">
-                    <h2 class="text_center sub_headding_size" > Treaty of Purandar</h2>
+                    <h2 class="text_center sub_headding_size headding_familay" > Treaty of Purandar</h2>
                    
                     <img src="./../images/achivements/mughal.jpg" class="achivements_img">
                     <img src="./../images/achivements/Shaistekhan.jpg" class="achivements_img"><br>
                     <p class="text_size">
-                    The attacks on Shaista Khan and Surat enraged Aurangzeb. In response, he sent the Rajput general Jai Singh I with an army numbering around 15,000 to defeat Shivaji.Throughout 1665, Jai Singh's forces pressed Shivaji, with their cavalry razing the countryside, and besieging Shivaji's forts. The Mughal commander succeeded in luring away several of Shivaji's key commanders, and many of his cavalrymen, into Mughal service. By mid-1665, with the fortress at Purandar besieged and near capture, Shivaji was forced to come to terms with Jai Singh.In the Treaty of Purandar, signed by Shivaji and Jai Singh on 11 June 1665, Shivaji agreed to give up 23 of his forts, keeping 12 for himself, and pay compensation of 400,000 gold hun to the Mughals.</p>
-                    <a href="./../Pages/achivements1.html #Treaty of Purandar"><button class="btn">learn more </button></a></div></div>
+                    The attacks on Shaista Khan and Surat enraged Aurangzeb. In response, he sent the Rajput general Jai Singh I with an army numbering around 15,000 to defeat Shivaji.Throughout 1665, Jai Singh's forces pressed Shivaji, with their cavalry razing the countryside, and besieging Shivaji's forts. The Mughal commander succeeded in luring away several of Shivaji's key commanders, and many of his cavalrymen, into Mughal service. By mid-1665, with the fortress at Purandar besieged and near capture, Shivaji was forced to come to terms with Jai Singh.In the Treaty of Purandar, signed by Shivaji and Jai Singh on 11 June 1665, Shivaji agreed to give up 23 of his forts.</p>
+                    <a href="./../pages/achivements1.html #Treaty of Purandar"><button class="btn">learn more </button></a></div></div>
                 <hr>
               <h3 class="text_center text_padding headding_size"> SHIVAJI MAHARAJ ACHIVEMENTS OF SOLDIER </h3>  
               <div class="achivements_container">
@@ -153,48 +160,48 @@
         <h2 class="text_center sub_headding_size">Bahirji Naik</h2>
                 <img src="./../images/achivements/bahirji.jpeg" class="achivements_img">
                 <img src="./../images/achivements/bahirji2.jpeg" class="achivements_img"><br><p class="text text_size">
-                Bahirji Naik, (original name Bhairavnath Jadhav), was a 17th century Maratha spy and head of intelligence department in the army of Shivaji. Bahirji was honoured with title of "Naik"by King Shivaji due to his great work.As Shivaji’s Chief of Intelligence.His tomb is currently situated on Bhupalgad in Khanapur taluka of Sangli district. He was born in the village of Shingave Naik, Ahmednagar. In 1592, Bahirji's son, Tukoji Naik, built Ram Mandir and the outer border of the Shingave village. A stone bearing an inscription of his name is kept in the Ram Mandir.</p>
-                <a href="./../Pages/soldier.html #Bahirji Naik"><button class="btn">learn more </button></a></div>
+                Bahirji Naik, (original name Bhairavnath Jadhav), was a 17th century Maratha spy and head of intelligence department in the army of Shivaji. Bahirji was honoured with title of "Naik"by King Shivaji due to his great work.His tomb is currently situated on Bhupalgad in Khanapur taluka of Sangli district. He was born in the village of Shingave Naik, Ahmednagar. In 1592, Bahirji's son, Tukoji Naik, built Ram Mandir and the outer border of the Shingave village. A stone bearing an inscription of his name is kept in the Ram Mandir.</p>
+                <a href="./../pages/soldier.html #Bahirji Naik"><button class="btn">learn more </button></a></div>
                 
               <div class="achivements ">
-                <h2 class="text_center sub_headding_size">Hambirrao Mohite</h2>
+                <h2 class="text_center sub_headding_size headding_familay">Hambirrao Mohite</h2>
                         <img src="./../images/achivements/hambirrao4.jpeg" class="achivements_img">
                         <img src="./../images/achivements/hambirrao2.jpeg" class="achivements_img"><br>
                         <p class="text text_size">
-                        Hambirrao Mohite (1630–1687), also known as Hansaji, was a prominent Maratha general who held the esteemed position of the 5th Senapati of the Maratha Army during the reign of Chhatrapati Shivaji.He was recognized for his exceptional military prowess and successfully led various campaigns on behalf of Shivaji, subsequently continuing his service under Chhatrapati Sambhaji.Hambirrao's true name was Hansaji, and the title Hambir Rao was bestowed upon him by Chhatrapati Shivaji in 1674. His descendants continued the title of Hambir Rao. </p> 
-                        <a href="./../Pages/soldier.html #Hambirrao Mohite"><button class="btn">learn more </button></a></div>
+                        Hambirrao Mohite (1630–1687), also known as Hansaji, was a prominent Maratha general who held the esteemed position of the 5th Senapati of the Maratha Army during the reign of Chhatrapati Shivaji.He was recognized for his exceptional military prowess and successfully led various campaigns on behalf of Shivaji, subsequently continuing his service under Chhatrapati Sambhaji.Hambirrao's true name was Hansaji, and the title Hambir Rao was bestowed upon him by Chhatrapati Shivaji in 1674.  </p> 
+                        <a href="./../pages/soldier.html #Hambirrao Mohite"><button class="btn">learn more </button></a></div>
                         
               <div class="achivements ">
-                <h2 class="text_center sub_headding_size">Baji Prabhu Deshpande</h2>
+                <h2 class="text_center sub_headding_size headding_familay">Baji Prabhu Deshpande</h2>
                         <img src="./../images/achivements/bajiprabhu2.jpeg" class="achivements_img">
                         <img src="./../images/achivements/bajiprabhu6.jpeg" class="achivements_img"><br>
                         <p class="text text_size">Baji Prabhu Deshpande 13 July 1660 was a general of the Maratha Army. He is known for his role in the Battle of Pavan Khind at Ghod Khind, where he sacrificed his life defending Shivaji Maharaj from incoming Adil Shahi forces of Siddi Johar.He also was a landlord or Vatandar in the Maval region.[citation needed] A 20th century depiction of Baji Prabhu with Shivaji at Pavan Khind by M.V. Dhurandhar.hivaji Maharaj continued to push into the Bijapur territory, after defeating Afzal Khan and the rout of the Bijapur army at Pratapgad.</p>
-                        <a href="./../Pages/soldier.html #Baji Prabhu Deshpande"><button class="btn">learn more </button></a></div>
+                        <a href="./../pages/soldier.html #Baji Prabhu Deshpande"><button class="btn">learn more </button></a></div>
                         
               <div class="achivements ">
-                <h2 class="text_center sub_headding_size">Tanaji Malusare</h2>
+                <h2 class="text_center sub_headding_size headding_familay">Tanaji Malusare</h2>
                         <img src="./../images/achivements/tanaji.jpg" class="achivements_img">
                         <img src="./../images/achivements/tanaji1.jpg" class="achivements_img"><br>
                       <p class="text text_size">
-                        The Treaty of Purandar (June 1665) had forced Shivaji Maharaj  to surrender 23 forts to the Moghuls, including Sinhagad. The treaty hurt the pride of the Marathas. None felt the sting more deeply than Jijabai, the mother of Shivaji Maharaj, who was in a way the mother of the kingdom. Shivaji Maharaj, however deeply he loved his mother, could not fulfill her wish, because the conquest was considered virtually impossible, with the fortifications and select Rajput, Arab and Pathan troops guarding it. Shivaji Maharaj’s lieutenants shared this view.But, Jijabai refused to share their hesitation. </p>
-                        <a href="./../Pages/soldier.html #Tanaji Malusare"><button class="btn">learn more </button></a></div>
+                        The Treaty of Purandar (June 1665) had forced Shivaji Maharaj  to surrender 23 forts to the Moghuls, including Sinhagad. The treaty hurt the pride of the Marathas. None felt the sting more deeply than Jijabai, the mother of Shivaji Maharaj, who was in a way the mother of the kingdom. Shivaji Maharaj, however deeply he loved his mother, could not fulfill her wish, because the conquest was considered virtually impossible, with the fortifications and select Rajput, Arab and Pathan troops guarding it.</p>
+                        <a href="./../pages/soldier.html #Tanaji Malusare"><button class="btn">learn more </button></a></div>
                         
               <div class="achivements ">
-                <h2 class="text_center sub_headding_size">Moropant Pingle</h2>
+                <h2 class="text_center sub_headding_size headding_familay">Moropant Pingle</h2>
                
                         <img src="./../images/achivements/moropant.jpeg" class="achivements_img">
                         <img src="./../images/achivements/moropant1.jpeg" class="achivements_img"><br>
                         <p class="text text_size">
                         He was one of the warriors who participated in the successful 1659 battle of Shivaji Maharaj's forces against the forces of Bijapur's Adil Shah which immediately followed Adil Shah's general Afzalkhān's death at Jāwali. He also participated in the battles at Trimbakeshwar Fort and Wāni-Dindori against the Mughal Empire. He participated in Shivaji's invasion of Surat in 1664. He also participated in the Battle of Salher Moropant surrounded and attacked the 25,000 strong Mughal infantry at Salher with his 20,000 infantry. </p>
-                        <a href="./../Pages/soldier.html #Moropant Pingle"><button class="btn">learn more </button></a></div>
+                        <a href="./../pages/soldier.html #Moropant Pingle"><button class="btn">learn more </button></a></div>
                          <div class="achivements ">
-                            <h2 class="text_center sub_headding_size">Yesaji Kank</h2>
+                            <h2 class="text_center sub_headding_size headding_familay">Yesaji Kank</h2>
                            
                                     <img src="./../images/achivements/yesaji.jpg" class="achivements_img">
                                     <img src="./../images/achivements/yesaji2.jpg" class="achivements_img"><br>
                                     <p class="text text_size">
-                                      Yesaji Kank was the commander-in-chief of the Maratha army for 30 years, only spending 22 days at home during that time. He was known for his bravery, honesty, and patriotism. His main responsibilities included maintaining discipline in the infantry and implementing administrative methods in newly acquired areas.Yesaji Kank was a childhood comrade of Shivaji, who was the founder of the Maratha Empire. Kank was born in the foothills of Rajgad. Yesaji was one of the most trusted partners that Maharaj had. There are claims that he was seven feet tall</p>
-                                    <a href="./../Pages/soldier.html #Yesaji Kank"><button class="btn">learn more </button></a></div>
+                                      Yesaji Kank was the commander-in-chief of the Maratha army for 30 years, only spending 22 days at home during that time. He was known for his bravery, honesty, and patriotism. His main responsibilities included maintaining discipline in the infantry and implementing administrative methods in newly acquired areas.Yesaji Kank was a childhood comrade of Shivaji, who was the founder of the Maratha Empire. Kank was born in the foothills of Rajgad. Yesaji was one of the most trusted partners that Maharaj had. </p>
+                                    <a href="./../pages/soldier.html #Yesaji Kank"><button class="btn">learn more </button></a></div>
                         </div>
 </body>
 </html>

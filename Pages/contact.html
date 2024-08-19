@@ -1,67 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shivaji Maharaj details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/contact.css">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./../images/Rajmudra_Image.jpeg1-removebg-preview.png" type="image/png">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-           
+            box-sizing: border-box;
         }
-        .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+        .container {
+            background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+            padding: 20px;
         }
-        .head{
+        .head {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
             padding: 10px;
         }
-        #Nav{
-            font-size: 17px;
-            margin-top: 100px;
-            margin-left: 20px;
+        .head img {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
         }
-        .img{
-            height: 200px;
-            width: 200px;
+        #Nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
         }
-        a{
+        #Nav a {
             color: beige;
             text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+            border-radius: 5px;
         }
-        a:hover{
-            color:black;
+        #Nav a:hover {
+            color: black;
+            background: rgba(255, 255, 255, 0.2);
         }
-        .img_1{
-          background-size: cover;
-          width: 1520px;
-        }
-        .para_1{
-
+        
+        .container_2 {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-     <div class="head">
-        <img src="../images/bgimg.png" alt="Rajmudra" class="img">
-        <p id="Nav"><a href="../index.html">HOME</a></p>
-        <p id="Nav"><a href="../Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="../Pages/histroy.html">HISTROY</a></p>
-        <p id="Nav"><a href="../Pages/gallary.html">GALLERY</a></p>
-        <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
-        <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
-        <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="">CONTACT US</a></p>
-     </div>
+        <div class="head">
+            <img src="../images/bgimg.png" alt="Rajmudra">
+            <nav id="Nav">
+                <a href="./../index.html">HOME</a>
+                <a href="./About.html">ABOUT</a>
+                <a href="./histroy.html">HISTORY</a>
+                <a href="./gallary.html">GALLERY</a>
+                <a href="./resources.html">RESOURCES</a>
+                <a href="./fort.html">FORTS</a>
+                <a href="./Cluture contribution.html">CULTURE CONTRIBUTION</a>
+                <a href="./Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a>
+                <a href="./achivements.html">ACHIEVEMENTS</a>
+                <a href="./contact.html">CONTACT US</a>
+            </nav>
+        </div>
     </div>
-    <div class="container_2">
-      <div class="text">
-    <img src="./images/shivaji.jpeg" alt="" class="img_1">
-   
-  </div>
-  </div> 
+            <h1 class="heading">Contact Us</h1>
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <img src="./../images/contact-img/gmail.png" alt="gmail" class="contact-img"> <br>
+            <a href="mailto:bhavanipethkars123@gmail.com" class="no-underline">
+            <button class="contact-btn">Email Us</button></a>
+        </div>
+
+        <div class="contact-card">
+            <img src="./../images/contact-img/instagram.png" alt="instagram" class="contact-img"> <br>
+            <a href="https://www.instagram.com/" class="no-underline">
+            <button class="contact-btn">Follow Us</button></a>
+        </div>
+
+        <div class="contact-card">
+            <img src="./../images/contact-img/phone.png" alt="phone" class="contact-img"> <br>
+            <a href="tel:8484862696" class="no-underline">
+            <button class="contact-btn">Contact Us</button></a>
+        </div>
+
+        <div class="contact-card">
+            <img src="./../images/contact-img/whatsapp.png" alt="whatsapp" class="contact-img"> <br>
+            <a href="https://web.whatsapp.com/" class="no-underline">
+            <button class="contact-btn">Whatsapp Us</button></a>
+        </div>
+
+        <div class="contact-card">
+            <img src="./../images/contact-img/twitter.png" alt="whatsapp" class="contact-img"> <br>
+            <a href="https://web.whatsapp.com/" class="no-underline">
+            <button class="contact-btn">Follow Us</button></a>
+        </div>
+
+    </div>
+
+   <div class="maps-container">
+    <div class="headings-map">
+        <h2 class="gm-heading dancing-script text-center">Google Maps</h2> <hr> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0229257114715!2d75.34035707468477!3d19.88125382620108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba29fb6944193%3A0x789f261cf435978b!2sShivaji%20Chowk%2C%20Sanjay%20Nagar%2C%20Mondha%2C%20Chhatrapati%20Sambhajinagar%20(Aurangabad)%2C%20Maharashtra%20431003!5e0!3m2!1sen!2sin!4v1723804408486!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="form-container">
+        <div class="form">
+        <form>
+            <h3 class="dancing-script text-center form-heading">Get in Touch by Submitting this Form</h3> <hr><br> 
+            <input type="text" class="input-type" placeholder="Your First Name">
+            <input type="text" class="input-type" placeholder="Your Last Name">
+            <input type="text" class="input-type"  required placeholder="Your Phone Number"> <br>
+            <input type="text" class="input-type"  required placeholder="Your Email ID">
+
+           
+            <select class="select-state">
+                <option>Choose Your State</option>
+                <option>MAHARASHTRA</option>
+                <option>KARNATAKA</option>
+                <option>ANDHRA PRADESH</option>
+                <option>TELANGANA</option>
+                <option>MADHYA PRADESH</option>
+                <option>UTTAR PRADESH</option>
+                <option>WEST BENGAL</option>
+                <option>ODDISA</option>
+                <option>PUNJAB</option>
+                <option>GUJRAT</option>
+                <option>UTTARAKHAND</option>
+                <option>JAMMU</option>
+                <option>KASHMIR</option>
+                <option>KERALA</option>
+                <option>TAMIL NADU</option>
+                <option>ARUNACHAL PRADESH</option>
+            </select> <br>
+
+            <textarea cols="60" rows="14" placeholder="Write Your Message Here...." class="textarea"></textarea> <br>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    </div>
+   </div>
 </body>
-</html>
+   
