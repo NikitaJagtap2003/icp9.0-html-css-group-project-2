@@ -31,6 +31,7 @@ body:hover{
    background-color: white;
    padding: 30px 10px;
    margin-top: 40px;
+ 
    width: 65%;
    display: flex;
    align-items: center;
@@ -44,7 +45,9 @@ body:hover{
    
 }
 .content{
-   margin-top: 50px;
+
+   margin-top: 1
+   0px;
    margin-left: 30px;
    height:500px ;
    width: 45%;
@@ -76,6 +79,7 @@ body:hover{
    /* border: 6px double rgb(172, 171, 171);*/
    border: 6px double rgb(255, 203, 184);
    animation: changeImage 7s infinite ease-in; 
+   margin-top: 50PX;margin-bottom: 50PX;
 } 
 @keyframes changeImage { 
    0% { background-image: url('././../../images/about_imgs/imgggg.webp');background-size: cover; } 
@@ -91,7 +95,7 @@ body:hover{
    background-color: beige;
 }
 .about-text{
-   padding-top: 30px;
+  
    padding-left: 60px; 
    text-align: justify;  
    font-family: Arial, Helvetica, sans-serif;
@@ -104,7 +108,7 @@ body:hover{
    box-shadow: 0px 0px 0px black;
 }
 .btn6{
-   margin-top: 50px;
+   margin-top: 30px;
    margin-left: 240px;
    padding: 5px 12px;
    /*  background-image: linear-gradient(to right top, #6cd2f8, hsl(204, 91%, 69%), #52cffe, #41dfff, #46eefa);
