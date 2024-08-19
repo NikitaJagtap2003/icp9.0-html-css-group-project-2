@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/about_css/about.css">
-    <title>Shivaji Maharaj Details</title>
+    <link rel="icon" type="image/jpg" href="./../images/bgimg.png">
+    <title>About Us</title>
     <style>
-        * {
+.container{
+          position: absolute;
+           top: 0;
+            left: 0;
+             height: 100px;
+             width: 100%;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             
+        }
+        .head{
+             margin: 20px 0 0 0;
+        } 
+        .navbar{
+             display: flex;
+             text-align: start; 
+        }
+        #Nav{
+             font-size: 17px;
+             margin:40px 0 0 10px;
+        }
+        .img{
+            height: 80px;
+            width: 150px;
+            padding-left: 60px;
+            margin-inline-start:-40px;
+            margin-top: -10px;margin-right: 50px;
+        }
+        a{
+               
+            color:#fff;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#ff6600;
+        }
+        .margin{
+            margin-left: 5px;
+        }
+
+
+        /* {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;  
+            box-sizing: border-box;
         }
         .container {
-            position: static;
-            padding-left: 20px;
-            padding-top: 2px;  
+          
+            padding: 20px;
         }
         .head {
             display: flex;
@@ -26,84 +70,88 @@
         .head img {
             height: 100px;
             width: auto;
-            margin-right: 25px;
+            margin-right: 20px;
         }
         #Nav {
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
+            gap: 1px;
             list-style: none;
         }
-        .color1{
-            color: #fedede;
+        #Nav a {
+            color: beige;
             text-decoration: none;
             font-size: 17px;
-            padding: 3.5px 5px;
+            padding: 12px;
             border-radius: 5px;
         }
-        .Nava{
-            color: white;
-            text-decoration: none;
-            font-size: 17px;
-            padding: 3px 1px;     
-            margin-left: 12px;    
-            border-radius: 5px;
-        }
-        .Nava:hover {
-            color: #c05a5a;
+        #Nav a:hover {
+            color: black;
          
         }
-        .color{
-            color: #d17575;
-            background-color: #fedede;
-            text-decoration: none;
-            font-size: 17px;
-            padding: 3px 5px;
-            border-radius: 5px;
-        }
+        
         .container_2 {
             padding: 20px;
-        } 
+        }*/
+        .Footer{
+           
+          position: absolute;
+          top:100%;
+        height: 400px;
+        width: 100%;
+        margin-top: 150px;
+        background-color:rgb(237, 163, 25);
+
+        }
+        #Logo_img{
+            height: 150px;
+            width: 250px;
+            margin: 20px 0 0 580px;
+        }
+        #Footer_Heading{
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-right: 100px;
+        }
+        #Footer_Description{
+            color: black;
+            text-align: center;
+            margin: 5px;
+            margin-right: 100px;;
+        }
+        #Footer_img{
+            margin-left: 620px;
+        }
+        #icon_img{
+            height: 30px;
+            width: 30px;
+            margin: 10px 0 0 10px;
+        }
+            
     </style>
 </head>
 <body>
+<div class="conatiner_home">
     <div class="container">
-       
-            <nav id="Nav">
-
-<<<<<<< HEAD
-            <div class="head">
-                <img src="../images/bgimg.png"   class="Nava "alt="Rajmudra">
-                <a href="../index.html" class="Nava  color1">HOME</a>
-                <a href="#" class="Nava color" >ABOUT</a>
-                <a href="./../Pages/history.html" class="Nava color1">HISTORY</a>
-                <a href="./../Pages/gallery.html" class="Nava  color1">GALLERY</a>
-                <a href="./../Pages/resources.html" class="Nava  color1">RESOURCES</a>
-                <a href="./../Pages/forts.html" class="Nava  color1 ">FORTS</a>
-                <a href="./../Pages/Culture_contribution.html" class="Nava  color1">CULTURE CONTRIBUTION</a>
-                <a href="./../Pages/Associates_and_allies.html" class="Nava  color1">FAMOUS ASSOCIATES & ALLIES</a>
-                <a href="./../Pages/achivements.html" class="Nava  color1">ACHIEVEMENTS</a>
-                <a href="./../Pages/contact.html" class="Nava  color1">CONTACT US</a>
-        </nav>
-=======
-                <div class="head">
-                    <img src="../images/bgimg.png" alt="Rajmudra">
-                <a href="../index.html">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="./../Pages/history.html">HISTORY</a>
-                <a href="./../Pages/gallery.html">GALLERY</a>
-                <a href="./../Pages/resources.html">RESOURCES</a>
-                <a href="./../Pages/fort.html">FORTS</a>
-                <a href="./../Pages/Culture_contribution.html">CULTURE CONTRIBUTION</a>
-                <a href="./../Pages/Associates_and_allies.html">FAMOUS ASSOCIATES & ALLIES</a>
-                <a href="./../Pages/achievements.html">ACHIEVEMENTS</a>
-                <a href="./../Pages/contact.html">CONTACT US</a>
-            </nav>
->>>>>>> c382ab685dceb05fc44cf30800f13397467b3742
+     <div class="head" >
+        <img src="../images/bgimg.png" alt="Rajmudra" class="img"><span></span>
         </div>
+        <!-------Navbars-------->
+        <div class="navbar">
+        <p id="Nav"><a href="./../index.html" class="margin">HOME</a></p>
+        <p id="Nav"><a href="#" style="color: #ff6600;"class="margin">ABOUT</a></p>
+        <p id="Nav"><a href="./../pages/histroy.html"class="margin">HISTROY</a></p>
+        <p id="Nav"><a href="./../pages/gallery.html"class="margin">GALLERY</a></p>
+        <p id="Nav"><a href="./../pages/resources.html"class="margin">RESOURES</a></p>
+        <p id="Nav"><a href="./../pages/fort.html"class="margin">FORTS</a></p>
+        <p id="Nav"><a href="./../pages/Cluture contribution.html"class="margin">CLUTURE CONTRIBUTION</a></p>
+        <p id="Nav"><a href="./../pages/Assocites and allies.html"class="margin">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="./../pages/achivements.html"class="margin">ACHIVEMENTS</a></p>
+        <p id="Nav"><a href="./../pages/contact.html"class="margin">CONTACT US</a></p>
     </div>
-   
-</div> 
+  </div>
 <center>
 <div class="about-continer ">
     <div class="image">
@@ -125,12 +173,28 @@
     </div> 
 </center>
 </div>
-<br><br><br>
 
-<div class="footer-bottom">
-    <marquee>
-        <p><b>&copy; 2024 Rajmudra. All rights reserved.</b></p>
-    </marquee>   
-</div>
+
+
+<footer>
+    <div class="Footer">
+        <img src="./../images/bgimg.png" alt="Logo_img" id="Logo_img">
+        <p id="Footer_Heading"><b>Chhatrapati Shivaji Maharaj</b></p>
+        <p id="Footer_Description">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
+        <p id="Footer_Description">Tel : +91 9356558803 | E-mail : Chhatrapatishivajimahraj@gmail.com | W : www.chhatrpatishivajimaharaj.com</p> <br>
+        <p id="Footer_Description">Follow #WeAreMarathas</p>
+        <p id="Footer_img"> 
+        <a href="https://www.facebook.com/WeAreMarathas/"><img src="./../images/facebook (1).png" alt="icon_img" id="icon_img"></a>
+        <a href="https://www.instagram.com/WeAreMarathas/"><img src="./../images/instagram.png" alt="icon_img" id="icon_img"></a>
+        <a href="https://x.com/WeAreMarathas"><img src="./../images/twitter.png" alt="icon_img" id="icon_img"></a>
+        <a href="https://mail.com/WeAreMarathas"><img src="./../images/mail (1).png" alt="icon_img" id="icon_img"></a>
+        
+    </div>
+   </footer>
+
+
+
+
+
 </body>
 </html>

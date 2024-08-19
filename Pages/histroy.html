@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html>
+<html>
 <head>
     <title>Shivaji Maharaj details</title>
     <style>
         body{
-            background-color: rgb(244, 197, 136);
-        }
-        *{
-            margin: 0;
-            padding: 0;
-           
-        }
-        .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
-        }
-        .head{
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-        }
-        #Nav{
-            font-size: 17px;
-            margin-top: 100px;
-            margin-left: 20px;
-        }
-        .img{
-            height: 200px;
-            width: 200px;
-        }
-        a{
-            color: beige;
-            text-decoration: none;
-        }
-        a:hover{
-            color:rgb(13, 9, 9);
+            background-color: rgb(247, 222, 188);
         }
         .img_1{
           background-size: cover;
           width: 1520px;
         }
-        .para_1{
-
-        }
+       
         .text{
-            color: rgb(65, 2, 110);
+            color: rgb(35, 25, 60);
             font-size: 55px;
             font-family: cursive;
+            background-color: lightblue;
             padding: 20px;
             margin: 20px;
-
+           box-shadow: 0px 0px 14px 8px rgb(243, 178, 100);
+        }
+        .text:hover{
+            background-color:lavender;
+            color: rgb(7, 91, 41);
         }
         .text1{
-            color: rgb(85, 14, 14);
+            color: rgb(122, 22, 22);
             text-align: center;
-          font-size:80px;
+          font-size:50px;
           font-family: cursive;
+        }
+        .text1:hover{
+        color: rgb(22, 22, 235);
         }
         .text2{
             padding:25px;
@@ -63,23 +41,35 @@
             font-family: 'Times New Roman', Times, serif;
             text-align:center;
         }
+        .text2:hover{
+            color: rgb(19, 2, 99);
+        }
         .text_1{
             font-size: 40px;
-            font-family:cursive;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-top: 30px;
             padding: 40px;
             text-align: center;
+            color: rgb(74, 10, 117);
+        }
+        .text_1:hover{
+            color:rgb(7, 91, 41);
         }
 
         .img1{
             border-radius: 20px;
             display: inline;
-            height: 400px;
-            width: 600px;
-            border:10px double #252424db;
+            height: 300px;
+            width: 500px;
+            border:15px double #e45812db;
            justify-content: center;
-            margin: 3px;
+            margin-right:20px;
         }
+        .img1:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+          }
+
         .text3{
             font-size:50px;
             text-align: center;
@@ -87,42 +77,124 @@
             color:rgb(46, 63, 63);
         }
         .text4{
-            font-size: 70px;
+            font-size: 30px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             color:rgb(32, 191, 14);
             margin: 10px;
         }
+        .text4:hover{
+       color:rgb(158, 2, 224);
+        }
+       
+        .container_2 {
+            padding: 20px;
+        }
+        .container3{
+         height:1500px;
+          width: 1200px;
+          background-color: rgb(152, 243, 190);
+          padding: 10px;
+          margin: 30px;
+          display:inline-block;
+          border:15px double rgb(27, 18, 131);
+          box-shadow: 0px 0px 14px 8px rgb(8, 8, 8);
+          border-radius: 5px;
+    }
+      .container3:hover{
+    background-color:rgb(238, 117, 117);
+      }
+
+    .video{
+        border:15px double #cd4207db;
+        border-radius:40px;
+        margin-left: 20px;
+
+    }
+      #Btn{
+           margin-left: 500px;
+            font-size: 40px;
+            color:rgb(21, 21, 20);
+            background-color: orangered;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: none;
+        }
+        #Btn:hover{
+            background-color: #30e4ab;
+            box-shadow: 1px 2px 2px 3px black;
+            transition: 0.5s;
+        }
+        *{
+              margin: 0;
+              padding: 0;
+             
+          }
+          .head {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              background: rgba(0, 0, 0, 0.4);
+              width: 1300px;
+          }
+          .img {
+              height: 120px;
+          }
+          #Nav {
+              display: flex;
+              flex-wrap: wrap;
+              gap:0.5px;
+              list-style: none;
+          }
+          .container {
+            position: static;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 2px;   
+          }
+          a {
+              color: beige;
+              text-decoration: none;
+              font-size: 17px;
+              padding: 7px;
+              border-radius: 5px;
+          }
+          a:hover{
+              color:rgb(248, 164, 8);
+          }
+    
     </style>
 </head>
 <body>
     <div class="container">
-     <div class="head">
-        <img src="../images/bgimg.png" alt="Rajmudra" class="img">
-        <p id="Nav"><a href="../index.html">HOME</a></p>
-        <p id="Nav"><a href="./../Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="./../Pages/gallary.html">GALLERY</a></p>
-        <p id="Nav"><a href="./../Pages/resources.html">RESOURES</a></p>
-        <p id="Nav"><a href="./../Pages/fort.html">FORTS</a></p>
-        <p id="Nav"><a href="./../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="./../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="./../Pages/achivements.html">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="./../Pages/contact.html">CONTACT US</a></p>
-    </div>
-    </div>
-    <div class="container_2"></div>
+        <div class="head">
+           <img src="../images/bgimg.png" alt="Rajmudra" class="img">
+           <p id="Nav"><a href="../index.html">HOME</a></p>
+           <p id="Nav"><a href="../Pages/About.html">ABOUT</a></p>
+           <p id="Nav"><a href="../Pages/histroy.html">HISTROY</a></p>
+           <p id="Nav"><a href="../Pages/gallary.html">GALLERY</a></p>
+           <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
+           <p id="Nav"><a href="../Pages/fort.html">FORTS</a></p>
+           <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
+           <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
+           <p id="Nav"><a href="../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
+           <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
+        </div>
+       </div>
+    <div class="container_2">
     <div class="text_1">
-    मंदिर थरारली, शिवनेरीची तोफ कडाडली<br>
+   <b> मंदिर थरारली, शिवनेरीची तोफ कडाडली<br>
     वार्‍याची कोवळी झुळूक दर्या खोर्यात दरवळली....<br>
     जिजाऊ पोटी मराठ्यांचा राज अवतरला सांगत मुकी पाखर हि किलबिलली....<br>
     नगारा वाजला, शाहिरी साज चढला<br>
     डंका डोंगरा आड सांगत सुटला,आता सह्याद्रीवर भगवा फडकणार....!!!!<br>
     मराठ्यांची तलवार शत्रू वर धडकणार....<br>
     इतिहासाचं पहिलं पान शिव जन्मान लिहील होत,<br>
-    हिरव्या दगडावर आता भगवं रक्त स्वराज्याचा इतिहास कोरत होत.......<br>
+    हिरव्या दगडावर आता भगवं रक्त स्वराज्याचा इतिहास कोरत होत.......<br></b>
     </div>
     <h1 class="text">|| CHHATRAPATI SHIVAJI MAHARAJ ||</h1>
     <div class="text3">
+        <div class="container3">
  Name : Shivaji Shahaji Bhonsle<br><br>
 
 Date of Birth : February 19, 1630<br><br>
@@ -144,6 +216,7 @@ Death : April 3, 1680<br><br>
 Seat of Power : Raigad Fort, Maharashtra<br><br>
 
 Successor : Sambhaji Bhonsle<br><br>
+</div>
 <hr/><hr/>
 <br>
 </div>
@@ -166,7 +239,7 @@ Successor : Sambhaji Bhonsle<br><br>
      <h1 class="text1">Parents Of Shivaji Maharaj</h1>
      <div class="text4">||..Shahaji Maloji Bhosle..||</div>
      <img src="../images/shahaji.jpg" class="img1">
-     <iframe width="600" height="420" src="https://www.youtube.com/embed/kS0omHPlCms?si=oEBuAwfL4ebcZfLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="500" height="300" src="https://www.youtube.com/embed/kS0omHPlCms?si=oEBuAwfL4ebcZfLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
      <h2 class="text2">
         Shahaji Bhonsale (Marathi pronunciation: 18 March 1594 – 23 January 1664) was a 17th century Indian military leader who served the Ahmadnagar Sultanate, the Bijapur Sultanate, and the Mughal Empire at various points in his career. As a member of the Bhonsle dynasty, Shahaji inherited the Pune and Supe jagirs (fiefs) from his father Maloji, who previously served the Ahmadnagar Sultanate. During the Mughal invasion of the Deccan, Shahaji joined the Mughal forces and served under Emperor Shah Jahan for a short period. After being deprived of his jagirs, he defected to the Bijapur Sultanate in 1632 and regained control over Pune and Supe. In 1638, he received the jagir of Bangalore after Bijapur's invasion of Kempe Gowda III's territories. Afterwards, he became the chief general of Bijapur and oversaw its expansion.
         <br><br>
@@ -175,7 +248,7 @@ Shahaji brought the house of Bhosale into prominence and was the father of Shiva
      <br>
      <div class="text4">||..Jijabai Shahaji Bhosle..||</div>
      <img src="../images/jijamata.jpg" class="img1">
-     <iframe width="600" height="420" src="https://www.youtube.com/embed/LzjXj-SHP2E?si=xBcXF5ybNLuQFAx6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="500" height="300" src="https://www.youtube.com/embed/LzjXj-SHP2E?si=xBcXF5ybNLuQFAx6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
      <h2 class="text2">
         Jijabai Shahaji Bhonsale (née Jadhav; 12 January 1598 – 17 June 1674), referred to as Rajmata Jijabai, was the mother of Chattrapati Shivaji, founder of the Maratha Empire.She was a daughter of Lakhujirao Jadhav of Sindkhed Raja.
      <br><br>
@@ -199,7 +272,7 @@ Some historians believe that the height of Shivaji Raje was about 168 cm (5 ft, 
 
         <h1 class="text1">The Great Marathas</h1>
         <img src="../images/maharaj.jpg" class="img1">
-        <iframe width="600" height="420" src="https://www.youtube.com/embed/X-g0jIrBXQs?si=ypXBQDma9fC5GuM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/X-g0jIrBXQs?si=ypXBQDma9fC5GuM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
         <h2 class="text2">Maratha, a major people of India, famed in 
             history as yeoman warriors and champions of Hinduism. Their 
             homeland is the present state of Maharashtra, the Marathi-
@@ -232,7 +305,7 @@ Some historians believe that the height of Shivaji Raje was about 168 cm (5 ft, 
             <hr/><hr/>
           <h1 class="text1">1st Coronation Of Chhatrapati Shivaji Mararaj</h1>
           <img src="../images/balshivaji1.jpg" class="img1">
-          <iframe width="600" height="420" src="https://www.youtube.com/embed/OjfQlJLyAfA?si=XvhTAcHw9Zd5QWTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="500" height="300" src="https://www.youtube.com/embed/OjfQlJLyAfA?si=XvhTAcHw9Zd5QWTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
             <h2 class="text2">Shivaji Maharaj was crowned as the king on June 6, 
             1674 which marked the beginning of Hindavi Swarajya in India. This historic 
             day is celebrated as Shivrajyabhishek day at Chhatrapati Shivaji Maharaj's 
@@ -282,14 +355,58 @@ Some historians believe that the height of Shivaji Raje was about 168 cm (5 ft, 
                 <br><br>
             </h2>
             <hr/><hr/>
-            <h1 class="text1">Killing Of Afzal Khan</h1>
+            <h1 class="text1">Conflicts With Mugals</h1>
+            <img src="../images/maharaj1.png" class="img1">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/FCOgv6hea3U?si=3aKbM21Du7ho2yrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+            <h2 class="text2">
+            <p> Due to Shivaji's disputes with the Bijapuri Sultanate and his unending victories, the Mughal Emperor Aurangzeb failed to notice him. Aurangzeb concentrated his efforts on eliminating the Maratha threat because he saw him as a threat to the spread of his highest goal. When Shivaji's army stormed and looted Mughal holdings near Ahmednagar and Junnar in 1957, conflicts erupted. Even so, Aurangzeb's counterattack was thwarted by the arrival of the stormy season and the struggle for advancement in Delhi. To stop Shivaji, Aurangzeb coordinated Shaista Khan, the governor of the Deccan and his maternal uncle. Shaista Khan sent off an enormous assault against Shivaji, catching a few fortresses under his influence and, surprisingly, his capital Poona. Shaista Khan was injured and expelled from Poona as a result of Shivaji's clandestine attack on him in response.
+               <br><br>
+                Later, Shaista Khan planned many raids against Shivaji, significantly weakening his position in the Konkan region. Shivaji went after Surat, a prominent Mughal trading centre, and took from the Mughal treasures to replenish his depleted treasury. A furious Aurangzeb sent Jai Singh I, his central general, and a horde of 150,000 people. The Mughal empire inflicted severe damage by invading Shivaji's castles, stealing their treasure, and then slaughtering the defenders. To save any additional casualties, Shivaji agreed to reach an understanding with Aurangzeb. On June 11, 1665, Shivaji and Jai Singh ratified the Treaty of Purandar. Shivaji agreed to hand over 23 fortresses and pay the Mughal Empire 400,000 as compensation. Shivaji was welcomed by Aurangzeb in Agra with the intention of using his strategic skills to unite the Mughal domains in Afghanistan. With his eight-year-old son Sambhaji, Shivaji travelled to Agra.
+                <br><br>
+                He was displeased with how Aurangzeb had treated him. He stormed out of court, and an indignant Aurangzeb imprisoned him at home. However, Shivaji eventually used his intelligence and cunning to escape the arrest. He pretended extreme ailment and set up containers of desserts to be shipped off sanctuary as contributions for supplication. On August 17, 1666, he escaped by disguising himself as one of the transporters and hiding his child inside one of the containers. In ensuing times, Mughal and Maratha threats were placated generally by consistent intercession through Mughal Sardar Jaswant Singh. Harmony endured till 1670, after which Shivaji jump-started a full-scale offence against the Mughals. He recuperated a large portion of his domains attacked by the Mughals in four months or less.</p>            
+            </h2>
+            <hr/><hr/>
+
+            <h1 class="text1">Military</h1>
+            <img src="../images/maharaj2.png" class="img1">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/6ecqM8XVxYQ?si=ym2V0dIwXdO3qki9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+            <h2 class="text2">
+           <p>Chhatrapati Shivaji Maharaj showed extraordinary expertise in making his tactical association, which went on until the destruction of the Maratha Empire. His system laid on utilizing his ground powers, maritime powers, and a series of strongholds across his domain. The Maval infantry filled in as the centre of his ground powers (built up with Telangi musketeers from Karnataka), upheld by Maratha cavalry. His mounted guns were moderately immature and dependent on European providers, further slanting him to an exceptionally versatile type of fighting.</p>
+            </h2>
+           <hr/><hr/>
+
+           <h1 class="text1">Organization</h1>
+           <img src="../images/maharaj3.png" class="img1">
+           <iframe width="500" height="300" src="https://www.youtube.com/embed/bzA3ZuurEQw?si=gSX0NHugTlKZOjrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+           <h2 class="text2">Under his rule, the Maratha organization was laid out where Chhatrapati was the preeminent sovereign, and a group of eight clergymen were designated to regulate the legitimate requirement of different strategies. These eight priests revealed straightforwardly to Shivaji and were given a ton of force as far as the execution of strategies formed by the King.<br><br>
+           These eight priests were -<br>
+1.The Peshwa, or Prime Minister, who oversaw the overall organisation and addressed the sovereign despite his absence, was the first of these eight priests.<br><br>
+2.The Majumder or the Auditor was liable for keeping up with the monetary soundness of the realm.<br><br>
+3.The PanditRao, or Chief Spiritual Head, was liable for supervising the profound prosperity of the kingdom, fixing dates for strict services and administering beneficent projects attempted by the ruler.<br><br>
+4.The Dabir or Foreign Secretary was dependent on the obligation of educating the ruler on issues concerning international strategies.<br><br>
+5.The Senapati, or Military General, was in charge of governing every aspect of the military, including recruitment, association, and warrior training. He likewise was the essential guide of the lord in the hour of a conflict.<br><br>
+       </h2>    
+           <hr/><hr/>
+
+            <h1 class="text1">Conflicts With Bijapur</h1>
             <img src="../images/afzalkhan.jpg" class="img1">
-            <iframe width="600" height="420" src="https://www.youtube.com/embed/QQKJZCJhD6Q?si=6l6pInkhUr_rVAjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/QQKJZCJhD6Q?si=6l6pInkhUr_rVAjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
             <h2 class="text2">Shivaji used to be a former vassal of the Adil Shahis but by the 1650s, he had become increasingly assertive, taking forts across the Konkan, and bringing under control large swathes of Adil Shahi territory. Given Afzal Khan’s success in the south, he was sent by the Sultan, with a mighty army, to subdue the Maratha icon.
               <br><br> The most famous use of the wagh nakh in history comes from the story of Afzal Khan’s killing by Shivaji. Khan was a general of Bijapur’s Adil Shahi Sultanate. According to legend, he was a fierce warrior and stood over 7 feet tall. After subjugating restive fiefs in the Sultanate’s southern regions, he was ordered to bring Shivaji to heel.
                <br><br>Khan marched into the Konkan and demanded a meeting with Shivaji. He said that the two should speak, one-on-one, in order to avoid unnecessary bloodshed and settle the issue. But Shivaji smelled treachery. Thus he went prepared to the meeting, wearing a chainmail under his robes and hiding a wagh nakh in his sleeve.
                 <br><br>
                 In the meeting, Khan, in the guise of embracing him, attempted to stab the Maratha leader. But Shivaji was protected by his armour and retaliated: the wagh nakh ripped out Khan’s guts. Khan would eventually be beheaded by one of Shivaji’s men and in the battle that followed, Shivaji’s army came out as victor.</h2>
              <hr/><hr/>
+
+             <h1 class="text1">Achivements Of Shivaji Maharaj</h1>
+             <img src="../images/image-1.png" class="img1">
+             <iframe width="500" height="300" src="https://www.youtube.com/embed/PSSQ9Q6knqY?si=d1lSDEm0Q3dnnscg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+                <p><h2 class="text2">
+                Chhatrapati Shivaji Maharaj ignited the fight for Swaraj (self-rule) and earned the title of 'guerrilla warfare pioneer. ' Known for building forts, he established a kingdom renowned for religious tolerance in a divided land. His powerful navy secured his maritime frontiers, challenging foreign dominance.
+                 </h2>
+                 <br>
+            <a href="./../Pages/achivements.html"><button id="Btn">Read More</button></a>
+                <hr/><hr/>
+
  </body>
 </html>

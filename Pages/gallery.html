@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Chatrapati Shivaji Maharaj</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #7d4c7c;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 0 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6c3e6c;
+            color: #e0e0e0;
+            border-radius: 5px;
+            padding: 0 20px;
+        }
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 28px;
+            margin: 30px 0;
+            font-weight: bold;
+            color: #4a148c;
+        }
+        .Page-heading{
+            text-align: center;
+            font-size: 50px;
+
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Set a normal gap between images */
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .box img {
+            width: 350px; /* Increased size of images */
+            height: 460px; /* Fixed height to maintain aspect ratio */
+            object-fit: cover;
+            border: 2px solid #7d4c7c;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .img{
+           width: 380px;
+           height: 300px;
+           display: block;
+           margin: 10px auto;
+           border:4px double black;
+           border-radius: 30px;
+           display: flex;
+           gap: 0px;
+           filter: grayscale(1);
+}
+        .featured-img{
+            border: 3px double black;
+            border-radius: 30px;
+        }
+        .img:hover{
+            filter: none;
+        }
+
+        /*img device*/
+        @media screen and (max-width:500px){
+            .Page-heading{
+                font-size: 35px;
+            }
+        }
+        /*tab device*/
+        @media screen and(min-width:500px) and (max-width:700px){
+            .Page-heading{
+                font-size: 45px;
+            }
+        }
+           /*lapi device*/
+           @media screen and (min-width:780px) {
+           } 
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="Page-heading">
+        <a href="./gallery.html">Featured Images</a>
+        <a href="./historical-painting.html">Historical Paintings</a>
+        <a href="./weapon.html">Weapon Images</a>
+        <a href="./powada.html">Powada Images</a>
+        <a href="./video.html">Videos</a>
+        </h1>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">Gallery of Chatrapati Shivaji Maharaj</h1>
+        <div class="box">
+            <img src="../images/featured-img-1.webp" class="featured-img" alt="Shivaji Maharaj 1">
+            <img src="../images/featured-img-2.jpg"  class="featured-img" alt="Shivaji Maharaj 2">  
+        </div>
+
+        <div class="box">
+            <img src="../images/featured-img-3.jpg"  class="featured-img" alt="Shivaji Maharaj 3">
+            <img src="../images/featured-img-5.webp" class="featured-img" alt="Shivaji Maharaj 5">
+        </div>
+
+        <div class="box">
+            <img src="../images/featured-img-6.webp" class="featured-img" alt="Shivaji Maharaj 6">
+            <img src="../images/featured-img-7.webp" class="featured-img" alt="Shivaji Maharaj 7">
+        </div>
+
+        <div class="box">
+            <img src="../images/featured-img-8.webp"  class="featured-img" alt="Shivaji Maharaj 8">
+            <img src="../images/featured-img-9.jpg"   class="featured-img" alt="Shivaji Maharaj 9">
+        </div>
+
+        <div class="box">
+            <img src="../images/featured-img-10.jpg" class="featured-img" alt="Shivaji Maharaj 10">
+            <img src="../images/featured-img-11.jpg" class="featured-img" alt="Shivaji Maharaj 11">
+        </div>
+    </div>
+</body>
+</html>
