@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Shivaji Maharaj details</title>
+    <link rel="shortcut icon" href="./images/bgimg.png" height="100px" width="800px" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-             margin: 0;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            *{
+                 margin: 0;
              padding: 0; 
              box-sizing: border-box;
         }
@@ -18,7 +19,7 @@
             background-size: cover;
         }
         .container{
-             height: 190px;
+             height: 160px;
              width: 100%;
              flex-direction: row;
              display: flex;
@@ -31,21 +32,18 @@
              margin: 50px 0 0 0;
         } 
         .navbar{
-             padding: 15px;
              display: flex;
-             text-align: start;
-             
+             text-align: start; 
         }
         #Nav{
              font-size: 17px;
-             margin:90px 0 0 10px; 
-             padding: 2px;
+             margin:70px 0 0 10px;
         }
         .img{
-            height: 170px;
-            width: 260px;
+            height: 90px;
+            width: 200px;
             margin-inline-start:-30px;
-            margin-top: -50px;
+            margin-top: -20px;
         }
         a{
             color:#fff;
@@ -59,6 +57,7 @@
             font-size: 75px;
             color: #ff3300;
             font-family: "Dancing Script", cursive;
+            
         }
         #para_2{
             font-size: 30px;
@@ -82,7 +81,7 @@
         }
         #img1{
             border: 5px solid rgb(243, 71, 8);
-            box-shadow: 1px 1px 1px 1px rgb(235, 121, 79);
+            box-shadow: 1px 1px 1px 1px rgb(198, 170, 160);
             margin: 90px;
             height: 500px;
             width: 500px;
@@ -116,7 +115,9 @@
             height: 350px;
             width: 620px;
             margin: 60px 0 0 90px;
-            box-shadow:1px 1px 1px 4px #ff6600;  
+            box-shadow:1px 1px 1px 4px #ff6600;
+           box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+           border-radius: 10px;     
         }
         #img3{
             height:300px;
@@ -136,18 +137,50 @@
             box-shadow: 1px 2px 2px 3px black;
             transition: 1s;
         }
-        .para_3{
-            font-size: 20px;
-            color:black;
-            margin: 20px;
-            margin-top: 30px;
+       
+        .vision{
+        font-size: 20px;
+        color:rgb(12, 12, 12);
+        margin-top: 30px;
+        margin: 10px;
+        height: 300px;
+        width: 350px;
+        box-shadow: 0 0 10px 2px rgb(188, 184, 184);
+        border-radius: 20px; 
+        background-color:wheat;
+
         }
+        #headvis{
+            text-align: center;
+            font-size: 40px;
+       }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .para_4{
+            text-align: center;
+            margin-top: 30px;
+            color: black;
+        }
+        .heading{
+            margin: 20px;
+            font-weight: 900;
+            font-size: 25px;
+            color: maroon;   
+        }
+        .vision:hover{
+            background-color: #ecae13;
+        }
+        
         h1{
             color:orangered;
             margin-top: 50px;
         }
         .img3{
             margin-left: 130px;
+            
         }
         #BTN{
             font-size: 20px;
@@ -161,76 +194,202 @@
         #highlight{
             color:orange;
         }
-           .second{
-           margin: 60px;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: nowrap;   
-             }
-            .box1{
-               margin-left: 20px;
-            }
-            #user{
-               height: 350px;
-               width: 300px;
-              margin-left: 20px;
-              box-shadow:1px 1px 1px 4px #ff6600;
-            
-                }
-         .Footer{
-        height: 400px;
-        width: 100%;
-        margin-top: 150px;
-        background-color:rgb(237, 163, 25);
-
+       .second{
+       margin: 60px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;   
+         }
+        .box1{
+           margin-left: 20px;
+           height: 350px;
+           width: 320px;
+           box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+           border-radius: 10px; 
+           background-color:wheat;    
         }
-        #Logo_img{
-            height: 150px;
-            width: 250px;
-            margin: 20px 0 0 580px;
-        }
-        #Footer_Heading{
+        #user{
+          height: 250px;
+          width: 300px;
+          margin-top: 10px;
+          margin-left: 10px;
+         }
+         #name{
             font-size: 25px;
-            color: black;
-            text-align: center;
-            margin-bottom: 20px;
-            margin-right: 100px;
-        }
-        #Footer_Description{
-            color: black;
-            text-align: center;
-            margin: 5px;
-            margin-right: 100px;;
-        }
-        #Footer_img{
-            margin-left: 620px;
-        }
-        #icon_img{
-            height: 30px;
-            width: 30px;
-            margin: 10px 0 0 10px;
-        }
+            margin: 90px;
+         }
+         #name.name_1{
+            font-size: 25px;
+            margin: 20px;
+         }
+         .footer_sub{
+           display: flex;
+            height: 350px;
+            width: 100%;
+            background-color: #232946;
             
+            }
+            .footer_1{
+             height: 300px;
+             width: 440px;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             margin: 20px;
+            }
+            #footer_img{
+                height: 90px;
+                width: 100px;
+            }
+            #footer_name{
+                color:white;
+                font-size: 21px;
+                margin-inline-start: -20px;
+                margin-top: 40px;
+            }
+            #footer_text{
+                color: #fff;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                padding: 10px;
+                margin-top: -40px;
+            }
+            #footer_add{
+                height: 40px;
+                width: 40px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                background-color: white;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+            #link{
+                font-size: 30px;
+                color: white;
+                margin-left: 130px;
+                margin-top: 30px;
+            }
+            #link_1{
+                margin-top: 80px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -100px;
+            }
+            #link_2{
+                margin-top: 100px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_3{
+                margin-top: 130px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_4{
+                margin-top: 160px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_5{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_6{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #location{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 100px;
+            font-size: 20px;
+            margin-inline-start: -230px;
+            padding: 10px;
+            margin-top: 90px;
+            }
+            #footer_text1{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: 80px;
+                padding: 10px;
+                margin-top: -110px;
+            }
+            #location1{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -70px;
+            font-size: 20px;
+            margin-inline-start: 40px;
+            padding: 10px;
+            }
+            #footer_text2{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: -40px;
+                padding: 30px;
+                margin-top: -90px;
+            }
+            #location2{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -10px;
+            font-size: 20px;
+            margin-inline-start: -200px;
+            padding: 10px;
+            }
+             #footer_text3{
+                color: #fff;
+                font-size: 20px;
+                margin-left: 20px;
+                margin-inline-start: -40px;
+                padding: 30px;
+                margin-top: -30px;
+            } 
     </style>
 </head>
 <body>
     <div class="conatiner_home">
     <div class="container">
      <div class="head" >
-        <img src="../images/bgimg.png" alt="Rajmudra" class="img">
+        <img src="../images/bgimg.png" alt="Rajmudra" class="img"><span></span>
         </div>
         <!-------Navbars-------->
         <div class="navbar">
         <p id="Nav"><a href="./index.html">HOME</a></p>
-        <p id="Nav"><a href="./Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="./Pages/histroy.html">HISTROY</a></p>
-        <p id="Nav"><a href="./Pages/gallary.html">GALLERY</a></p>
-        <p id="Nav"><a href="./Pages/resources.html">RESOURES</a></p>
-        <p id="Nav"><a href="./Pages/fort.html">FORTS</a></p>
-        <p id="Nav"><a href="./Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="./Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="./Pages/achivements.html">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="./Pages/contact.html">CONTACT US</a></p>
+        <p id="Nav"><a href="./pages/about.html">ABOUT</a></p>
+        <p id="Nav"><a href="./pages/histroy.html">HISTROY</a></p>
+        <p id="Nav"><a href="./pages/g">GALLERY</a></p>
+        <p id="Nav"><a href="./pages/resources.html">RESOURES</a></p>
+        <p id="Nav"><a href="./pages/fort.html">FORTS</a></p>
+        <p id="Nav"><a href="./pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
+        <p id="Nav"><a href="./pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="./pages/achivements.html">ACHIVEMENTS</a></p>
+        <p id="Nav"><a href="./pages/contact.html">CONTACT US</a></p>
     </div>
     </div>
 <div class="container_2">
@@ -255,67 +414,130 @@
         <br/>
         <br/>
         Shivaji's legacy was to vary by observer and time, but nearly two centuries after his death he began to take on increased importance with the emergence of the Indian independence movement, as many Indian nationalists elevated him as a proto-nationalist, founder of the Swaraj movement, and hero of the Hindus.</p>
-        <a href="./Pages/histroy.html"> <button id="Btn">Read More</button></a>
+        <a href="./pages/histroy.html"> <button id="Btn">Read More</button></a>
     </div>
      </div>
-     <h2 id="second_1">
-        
+     
        <div class="second">
            <div class="box1">
-               <img src="./images/img1.jpg_large" alt="user" id="user">
+               <img src="./images/img2.webp" alt="user" id="user"><span id="name" class="name_1">Chhatrpati Shivaji Maharaj</span>
            </div>
            <div class="box1">
-               <img src="./images/img2.webp" alt="user" id="user">
+               <img src="./images/jijamata.jpg" alt="user" id="user"><span id="name">Rajmata Jijau</span>
            </div>
            <div class="box1">
-               <img src="./images/img4.webp" alt="user" id="user">
+               <img src="./images/afzalkhan.jpg" alt="user" id="user"><span id="name">Afzal Khan</span>
            </div>
            <div class="box1">
-               <img src="./images/img3.webp" alt="user" id="user">
+               <img src="./images/baji prabhu.jfif" alt="user" id="user"><span id="name" class="name_1">Baji Prabhu Deshpande</span>
            </div>
        </div>
        </div>
-       <a href="./Pages/gallary.html"><button id="Btn1">Go To Gallery</button></a>
+       <a href="./pages/gallary.html"><button id="Btn1">Go To Gallery</button></a>
      <iframe width="660" height="415" src="https://www.youtube.com/embed/X-g0jIrBXQs?si=RLbSJmPDSTRF1JFf&amp;start=621" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
 
      <iframe width="660" height="415" src="https://www.youtube.com/embed/OUZfht9c6pw?si=Mp3BGe7Td-cIJyKo&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
-     
     </div>
     </div>
+    </div>
+    <h1 id="headvis"><u>➡️Vision of Shivaji Maharaj➡️</u></h1>
+    <div id="main">
+    <div class="vision">
+        <p class="heading">Swarajya (Self-Rule):</p>
+        <p class="para_4">The core of Shivaji Maharaj’s vision was to establish Swarajya, an independent Maratha state free from Mughal, Adil Shahi, and other external rulers. This vision emphasized self-governance, where the Marathas would have control over their land, resources, and future.</p>
     </div>
     <div class="vision">
-        <div class="vision_1">
-            
-     <h1>Vision of Chhatrapati Shivaji Maharaj:</h1>
-     <p class="para_3"> 
-     Chhatrapati Shivaji Maharaj envisioned a strong, independent, and prosperous Maratha kingdom that would be free from foreign domination and tyranny. His vision was to establish Swarajya (self-rule) where his subjects could live with dignity, security, and justice. He aimed to create a kingdom where Hindu culture and traditions could thrive and where all communities could live in harmony, respecting each other's beliefs and customs.</p>
-     
-    <h1>Mission of Chhatrapati Shivaji Maharaj:</h1> 
-    <p>
-             <li class="para_3" ><b id="highlight">Establishment of Swarajya:</b> His primary mission was to liberate his people from the oppressive rule of foreign powers, particularly the Mughal Empire and the Bijapur Sultanate, and to establish a sovereign Maratha state.</li>
-             <li class="para_3"><b id="highlight">Administrative Reforms:</b> Shivaji Maharaj focused on creating a well-structured administrative system. His mission included the development of a robust and efficient governance model that would ensure justice, economic stability, and the welfare of his subjects.</li>
-             <li class="para_3"><b id="highlight">Military Strength:</b> He aimed to build a strong military to defend his kingdom from external threats and to expand his territory. He was known for his innovative guerrilla warfare tactics and for fortifying key strategic locations.</li>
-             <li class="para_3"><b id="highlight">Promotion of Maritime Trade:</b> Shivaji Maharaj also had a mission to promote trade and commerce by securing and developing coastal regions, which would not only enhance the kingdom’s wealth but also ensure its security against naval threats.</li>
-     
-            <li class="para_3"><b id="highlight">Cultural Preservation:</b> He worked towards the revival and preservation of Hindu culture, traditions, and temples that were under threat during his time. He aimed to restore the pride and heritage of his people.</li>
-            <li class="para_3"><b id="highlight">Inclusive Governance:</b> Despite being a Hindu king, Shivaji Maharaj’s mission included fostering an inclusive society where people of all religions could coexist peacefully. He appointed people from different communities to high positions in his administration based on merit, not religion.</li></p>
-               </div>
+        <p class="heading">Hindavi Swarajya:</p>
+<p class="para_4">Shivaji Maharaj envisioned a state that would uphold and protect Hindu culture, values, and traditions while ensuring justice and welfare for all, irrespective of religion or caste. This was a vision of a culturally rooted, yet inclusive state.</p>
     </div>
-    <footer>
-        <div class="Footer">
-            <img src="./images/bgimg.png" alt="Logo_img" id="Logo_img">
-            <p id="Footer_Heading"><b>Chhatrapati Shivaji Maharaj</b></p>
-            <p id="Footer_Description">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
-            <p id="Footer_Description">Tel : +91 9356558803 | E-mail : Chhatrapatishivajimahraj@gmail.com | W : www.chhatrpatishivajimaharaj.com</p> <br>
-            <p id="Footer_Description">Follow #WeAreMarathas</p>
-            <p id="Footer_img"> 
-            <a href="https://www.facebook.com/WeAreMarathas/"><img src="./images/facebook (1).png" alt="icon_img" id="icon_img"></a>
-            <a href="https://www.instagram.com/WeAreMarathas/"><img src="./images/instagram.png" alt="icon_img" id="icon_img"></a>
-            <a href="https://x.com/WeAreMarathas"><img src="./images/twitter.png" alt="icon_img" id="icon_img"></a>
-            <a href="https://mail.com/WeAreMarathas"><img src="./images/mail (1).png" alt="icon_img" id="icon_img"></a>
-            
+    <div class="vision">
+        <p class="heading">Strong, Just, and Efficient Governance: </p>
+        <p class="para_4">Shivaji Maharaj foresaw a state where governance was fair, just, and efficient. His vision included a well-organized administration with a focus on the welfare of his subjects, protection of their rights, and the establishment of law and order.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Military Prowess and Naval Power:</p>
+        <p class="para_4">Recognizing the importance of military strength, Shivaji Maharaj aimed to build a formidable army and navy to protect his kingdom from invaders and establish dominance over the surrounding regions.</p>
+    </div>
+  
+</div>
+</div>
+<h1 id="headvis"><u>👉Mission of Shivaji Maharaj👉</u></h1>
+    <div id="main">
+    <div class="vision">
+        <p class="heading">Establishing and Expanding the Maratha Kingdom: </p>
+        <p class="para_4">Shivaji Maharaj’s mission was to build and expand the Maratha kingdom through strategic military campaigns, capturing key forts, and establishing control over vital regions in Maharashtra and beyond.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Building a Strong Administrative Framework: </p>
+<p class="para_4">He was committed to creating an efficient administrative structure that could govern effectively. This included the establishment of the Ashtapradhan Mandal (Council of Eight Ministers) to oversee various aspects of governance.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Fortification and Defense:  </p>
+        <p class="para_4">One of his key missions was to build and fortify numerous forts across his kingdom, which would serve as military strongholds, administrative centers, and protectors of his realm.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Promoting Social Welfare and Justice:</p>
+        <p class="para_4">Shivaji Maharaj was dedicated to ensuring the welfare of his subjects. His mission included providing justice, protecting the rights of women, supporting the poor, and curbing social evils.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Naval Expansion and Maritime Control: </p>
+        <p class="para_4"> Understanding the strategic importance of controlling the seas, Shivaji Maharaj’s mission included building a powerful navy and establishing Maratha control over key coastal regions and trade routes.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Defending Hindu Dharma and Protecting Temples: </p>
+        <p class="para_4">While being religiously tolerant, Shivaji Maharaj also took upon himself the mission to protect Hindu temples and places of worship from destruction, thereby preserving Hindu heritage and culture.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Fostering Alliances and Diplomacy:  </p>
+        <p class="para_4"> Shivaji Maharaj recognized the importance of alliances and diplomacy. His mission included forming strategic alliances with other regional powers to strengthen his position against larger empires like the Mughals.</p>
+    </div>
+    <div class="vision">
+        <p class="heading">Promoting Education and Culture: </p>
+        <p class="para_4">Another aspect of his mission was to promote education, literature, and cultural activities within his kingdom, fostering a sense of pride and unity among his people.</p>
+    </div>
+</div>
+</div>
+<Footer>
+    <div class="footer_sub">
+        <div class="footer_1">
+            <img src="./images/bgimg.png" alt="img" id="footer_img"><span id="footer_name">CHHATRAPATI SHIVAJI MAHARAJ</span>
+            <p id="footer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magnam, beatae, eos dolore magni provident vero doloremque iusto est non modi culpa aliquid, quasi praesentium ea blanditiis ullam illo veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://www.facebook.com/WeAreTeamIndia/">
+            <img src="./images/facebook (1).png" alt="img" id="footer_add"></a>
+            <a href="https://www.instagram.com/WeAreTeamIndia/">
+            <img src="./images/instagram.png" alt="img" id="footer_add"></a>
+            <a href="https://www.twitter.com/WeAreTeamIndia/">
+            <img src="./images/twitter.png" alt="img" id="footer_add"></a>
+            <a href="https://www.linkdin.com/WeAreTeamIndia/">
+            <img src="./images/about_imgs/linkdin.png" alt="img" id="footer_add"></a>
+            <a href="https://www.whatsapp.com/WeAreTeamIndia/">
+            <img src="./images/contact-img/whatsapp.png" alt="img" id="footer_add"></a>
         </div>
-       </footer>
+        <div class="footer_1">
+            <span id="link">Quick links</span>
+            <a href="./index.html">
+            <p id="link_1">Home</p></a>
+            <a href="./pages/About.html">
+            <p id="link_2">About</p></a>
+            <a href="./pages/gallery.html">
+            <p id="link_3">Gallery</p></a>
+            <a href="./pages/histroy.html">
+            <p id="link_4">Histroy</p></a>
+            <a href="./pages/resources.html">
+            <p id="link_5">Resources</p></a> 
+            <p style="color: white; margin-left: 70px; margin-top: 60px; font-size: 17px;" >Copyright © chhatrpatishivajimaharaj 2024</p>
+        </div>
+        <div class="footer_1">
+            <span id="link">Contact Us</span>
+            <img src="./images/location1.png" alt="" id="location">
+            <p id="footer_text1">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
+            <img src="./images/phone call.png" alt="" id="location1">
+            <p id="footer_text2">+91-9356558803</p>
+            <img src="./images/mail (1).png" alt="" id="location2">
+            <p id="footer_text3">chhatraptishivajimaharaj@gmail.com</p>
+        </div>
+    </div>  
+   </Footer>
 </body>
 </html>
 
