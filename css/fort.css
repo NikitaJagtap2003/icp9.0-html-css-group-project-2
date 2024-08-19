@@ -21,16 +21,17 @@ header {
 }
 
 .header-left {
-    position: absolute;
-    left: 0;
+    position: relative;
+    padding-left: 10px;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding-right: 1rem; /* Adds space between logo and nav links */
 }
 
 .header-left img {
-    height: 60px;
+    height: 70px;
     width: auto;
+    vertical-align: middle;
 }
 
 .header-center {
@@ -40,37 +41,53 @@ header {
 
 .header-center h1 {
     font-size: 2.2em;
-    background: rgba(132, 109, 109, 0.8);
+    background: #f6894b;
     padding: 10px;
-    margin: 0;
+    margin-left: 10px;
 }
 
 /* Navigation Bar Styles */
 .head {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 1px 0;
     font-weight: bold;
 }
 
+
 #Nav {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-    margin: 0;
+    gap: 1rem; /* Reduced gap to fit more links */
+    padding: 10px;
+    margin-right: 50px;
     list-style: none;
 }
 
 #Nav a {
+    white-space: nowrap; /* Prevent links from breaking onto multiple lines */
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 15px;
+    font-size: .8rem; /* Adjust font size for smaller screens */
+    padding: 20px 4px; /* Adjust padding to fit more links */
 }
 
 #Nav a:hover {
-    background-color: #555;
+    background-color: #7d624e;
     border-radius: 5px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    #Nav {
+        gap: 0.5rem; /* Further reduce gap on small screens */
+    }
+
+    #Nav a {
+        font-size: 0.9rem; /* Reduce font size slightly for better fit */
+        padding: 6px 10px; /* Reduce padding slightly */
+    }
 }
 
 /* Main Styles */
@@ -88,14 +105,17 @@ h3 {
 p {
     margin: 0 0 1rem 0;
     font-size: 1.2em;
-    background: rgba(0, 0, 0, 0.6);
-    color: rgb(228, 215, 215);
     font-weight: bold;
+}
+
+.fdesc {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(220, 217, 226, 0.916);
 }
 
 /* Intro Styles */
 .intro {
-    font-family: "Bodoni Moda SC", serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -119,6 +139,11 @@ p {
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.desc {
+    color: rgb(11, 11, 58);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card img {
@@ -170,29 +195,34 @@ p {
     .header-left img {
         width: 50%;
     }
-    
+
     .header-center h1 {
         font-size: 1.8em;
     }
-    
+
     .card {
         width: calc(50% - 1rem);
     }
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
 }
 
 @media (max-width: 576px) {
     .header-left img {
         width: 40%;
     }
-    
+
     .header-center h1 {
         font-size: 1.5em;
     }
-    
+
     .card {
         width: calc(100% - 1rem);
     }
-    
+
     #Nav {
         flex-direction: column;
         gap: 0.5rem;
