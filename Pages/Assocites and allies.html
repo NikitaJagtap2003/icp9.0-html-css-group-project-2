@@ -42,105 +42,156 @@
 
         }
     </style>
-     <style>
-        .box {
-          width: 600px;
-          background-color:gold;
-          border: 2px solid black;
-          text-align: center;
-          position:absolute;
-          width: 60%;
-          left:20%
-        }
-
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('images/famous associates/background.jfif') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffffac;
+    <style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        background-color: #111111;
+    }
+    
+    .page-header {
+        text-align: center;
+        padding: 20px;
+        background: rgba(216, 205, 205, 0.5);
+        backdrop-filter: blur(5px);
+        color: #191717c8;
+        z-index: 10;
+        position: relative;
+    }
+    
+    /* Background Video */
+    .background-video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    .background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    
+    /* Photo Card Container */
+    .photo-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Photo Card */
+    .photo-card {
+        background: linear-gradient(145deg, #444444, #222222);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        overflow: hidden;
+        width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .photo-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.7);
+    }
+    
+    /* Image in Photo Card */
+    .photo-card img {
+        width: 100%;
+        border-bottom: 2px solid #ffffff;
+        transition: transform 0.3s ease;
+    }
+    
+    .photo-card:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Info Section */
+    .info {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .info h2 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #ffcc00;
+    }
+    
+    .info p {
+        font-size: 1em;
+        color: #cccccc;
+    }
+    
+    .toggle-info {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #000000;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .toggle-info:hover {
+        background-color: #ffaa00;
+    }
+    
+    /* Full Info Section */
+    .full-info {
+        display: none;
+        padding: 15px;
+        color: #dddddd;
+    }
+    
+    .full-info p {
+        margin-bottom: 20px;
+    }
+    
+    /* Video Container */
+    .video-container {
+        text-align: center;
+    }
+    
+    .play-video {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #000000;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .play-video:hover {
+        background-color: #ffaa00;
+    }
+</style>
+<style> 
+    .footer-bottom {
+  margin-top: 5px;
+  color: #c05a5a;
+  text-align: center;
+  background-color: #f6eaea;
 }
-
-.photo-card-container {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping of cards */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    padding: 20px;
-    margin: 0;
-    box-sizing: border-box; /* Include padding in width calculations */
-}
-
-.photo-card {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin-right: 20px; /* Space between cards */
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-    overflow: hidden;
-    flex-shrink: 0; /* Prevent cards from shrinking */
-}
-
-.photo-card img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.photo-card .info {
-    padding: 15px;
-}
-
-.photo-card h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-.photo-card p {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-.photo-card .full-info {
-    display: none;
-    padding: 15px;
-}
-
-.photo-card .video-container {
-    display: none;
-    margin-top: 10px;
-}
-
-.photo-card button {
-    background-color: #f0f0f0;
-    border: none;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.photo-card button:hover {
-    background-color: #dcdcdc;
-}
-
-/* Add this new class */
-.photo-card.expanded {
-    transform: scale(1.1); /* Increase the card size */
-    z-index: 10; /* Bring the expanded card to the front */
-}
-
-/* Ensure smooth scaling */
-.photo-card {
-    transition: transform 0.3s, z-index 0.3s;
-}
-
-
-      </style>
+</style>
+    
 </head>
 <body background="">
     <div class="container">
@@ -163,231 +214,118 @@
     <img src="./images/shivaji.jpeg" alt="" class="img_1">
   </div>
   </div>
-    <h1> WELCOME TO ASSOCITES AND ALLIES </h>
-        <body>
-            <div class="photo-card-container">
-                <div class="photo-card" data-card-id="1">
-                    <img src="./../images/famous associates/chatrapati1.jpg" alt="Chatrapati Shivaji Maharaj"height=350px>
-                    <div class="info">
-                        <h2>Chatrapati Shivaji Maharaj</h2>
-                        <p>Chatrapati Shivaji Maharaj</p>
-                        <button class="toggle-info">Show More</button>
-                    </div>
-                    <div class="full-info">
-                        <p>Shivaji Maharaj's mother, a significant influence in his
-                            early life. Jijabai taught Shivaji the importance of
-                            strategy, values, and dharma by telling him stories from
-                            the great epics and folklore. She taught him the art of
-                            politics and prepared him to be a just and honest ruler.
-                            She even supervised his weapon training sessions.Jijabai
-                            told young Shivaji the stories of Rama, Krishna, Bhim
-                            and Abhimanyu. After listening to these stories the
-                            thoughts of displaying valour like the brave men came to
-                            Shivaji's mind. The thought of fighting against
-                            injustice also came to his mind.</p>
-                        <div class="video-container">
-                            <iframe class="video" width="100%" height="auto"
-                                src="https://www.youtube.com/embed/gXRFYol9-MI?si=gjWyxLkVGuEWYAhM"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <button class="play-video">Play Video</button>
-                        </div>
-                    </div>
+  <div class="footer-bottom">
+    <marquee>
+        <h1> WELCOME TO ASSOCITES AND ALLIES </h1>    </marquee>   
+</div>
+        
+            <body>
+
+                <!-- Header Section -->
+                <header class="page-header" style="color: black;">
+                    <h1>Historical Figures: A Tribute to Icons</h1>
+                    <p>This page features photo cards of legendary historical figures, each with a video that offers more insight into
+                        their lives and contributions.</p>
+                </header>
+            
+                <div class="background-video-container">
+                    <video autoplay muted loop class="background-video">
+                        <source src="./../images/famous associates/myvideo copy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-    
+            
                 <div class="photo-card-container">
-                    <div class="photo-card" data-card-id="4">
-                        <img src="./../images/famous associates/jijabai.jpeg"
-                            alt="Chatrapati Shivaji Maharaj" height="450">
+                    <div class="photo-card" data-card-id="1">
+                        <img src="./../images/famous associates/chatrapati1.jpg" alt="Chatrapati Shivaji Maharaj">
                         <div class="info">
-                            <h2>Jijabai</h2>
-                            <p>Jijabai</p>
-                            <button class="toggle-info">Show
-                                More</button>
+                            <h2>Chatrapati Shivaji Maharaj</h2>
+                            <p>Chatrapati Shivaji Maharaj</p>
+                            <button class="toggle-info"> <a href="./associates1.html"> show more</a></button>
                         </div>
                         <div class="full-info">
-                            <p>Role: Mother of Shivaji Maharaj.
-                                Contribution: Jijabai was a guiding
-                                force in Shivaji’s life, instilling in
-                                him the values of courage, justice, and
-                                devotion to his people. Her influence
-                                shaped Shivaji's character and his
-                                vision of swarajya.</p>
+                            <p>Shivaji Maharaj's mother, a significant influence in his early life. Jijabai taught Shivaji the
+                                importance of strategy, values, and dharma by telling him stories from the great epics and folklore.
+                                She taught him the art of politics and prepared him to be a just and honest ruler. She even supervised
+                                his weapon training sessions. Jijabai told young Shivaji the stories of Rama, Krishna, Bhim, and
+                                Abhimanyu. After listening to these stories, the thoughts of displaying valour like the brave men came
+                                to Shivaji's mind. The thought of fighting against injustice also came to his mind.</p>
                             <div class="video-container">
-                                <iframe class="video" width="100%"
-                                    height="auto"
-                                    src="https://youtu.be/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv"
-                                    frameborder="0"
+                                <iframe class="video" width="100%" height="auto"
+                                    src="https://www.youtube.com/embed/gXRFYol9-MI?si=gjWyxLkVGuEWYAhM" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
-                                <button class="play-video">Play
-                                    Video</button>
+                                <button class="play-video" onclick="window.open('https://www.youtube.com/embed/gXRFYol9-MI?si=gjWyxLkVGuEWYAhM', '_blank');">Play Video</button>
                             </div>
                         </div>
                     </div>
+            
                     <div class="photo-card-container">
-                        <div class="photo-card" data-card-id="5">
-                            <img src="./../images/famous associates/sabhajimaharaj.jpeg"c:\Users\keval\Downloads\jijabai.jpeg
-                                alt="Chatrapati Shivaji Maharaj">
+                        <div class="photo-card" data-card-id="1">
+                            <img src="./../images/jijamata.jpg" alt="Chatrapati Shivaji Maharaj">
                             <div class="info">
-                                <h2>Chratrapati Sambhaji Maharaj</h2>
-                                <p>Chratrapati Sambhaji Maharaj</p>
-                                <button class="toggle-info">Show
-                                    More</button>
+                                <h2>Raj Mata Jijau</h2>
+                                <p>Raj Mata Jijau</p>
+                                <button class="toggle-info">Show More</button>
                             </div>
                             <div class="full-info">
-                                <p>Role: Eldest son of Shivaji Maharaj and
-                                    successor to the Maratha throne.
-                                    Contribution: Though his reign was
-                                    short, Sambhaji Maharaj continued to
-                                    resist the Mughal Empire and played a
-                                    significant role in preserving the
-                                    Maratha Empire.</p>
+                                <p>Role: Mother of Shivaji Maharaj.
+                                    Contribution: Jijabai was a guiding
+                                    force in Shivaji’s life, instilling in
+                                    him the values of courage, justice, and
+                                    devotion to his people. Her influence
+                                    shaped Shivaji's character and his
+                                    vision of swarajya.</p>
                                 <div class="video-container">
-                                    <iframe class="video" width="100%"
-                                        height="auto"
-                                        src="https://youtu.be/k_indcC331o?si=6_fVc3t6gv744eV1"
-                                        frameborder="0"
+                                    <iframe class="video" width="100%" height="auto"
+                                        src="https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen>
                                     </iframe>
-                                    <button class="play-video">Play
-                                        Video</button>
+                                    <button class="play-video" onclick="window.open('https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv', '_blank');">Play Video</button>
                                 </div>
                             </div>
                         </div>
-    
+            
                         <div class="photo-card-container">
-                            <div class="photo-card" data-card-id="2">
-                                <img src="./../images/famous associates/tanaji malusare 2.jfif"
-                                    alt="Chatrapati Shivaji Maharaj">
+                            <div class="photo-card" data-card-id="1">
+                                <img src="./../images/famous associates/tanaji malusare 2.jfif" alt="Chatrapati Shivaji Maharaj" height="300px" width="500px">
                                 <div class="info">
-                                    <h2>Tanaji Malusare</h2>
-                                    <p>Tanaji Malusare</p>
+                                    <h2>TANAJI MALUSARE</h2>
+                                    <p>TANAJI MALUSARE</p>
                                     <button class="toggle-info">Show More</button>
                                 </div>
                                 <div class="full-info">
-                                    <p>Role: Close friend and trusted commander of
-                                        Shivaji
-                                        Maharaj.
-                                        Contribution: Famous for the Battle of
-                                        Sinhagad
-                                        in
-                                        1670, where he led a daring night attack to
-                                        recapture the fort. Despite losing his life
-                                        in
-                                        the
-                                        battle, his actions secured a crucial
-                                        victory
-                                        for
-                                        Shivaji.</p>
+                                    <p>Role: Eldest son of Shivaji Maharaj and
+                                        successor to the Maratha throne.
+                                        Contribution: Though his reign was
+                                        short, Sambhaji Maharaj continued to
+                                        resist the Mughal Empire and played a
+                                        significant role in preserving the
+                                        Maratha Empire.</p>
                                     <div class="video-container">
-                                        <iframe class="video" width="100%"
-                                            height="auto"
-                                            src="https://youtu.be/eLsKQgRp0XI?si=K27-FyE3PkzPXLyZ"
-                                            frameborder="0"
+                                        <iframe class="video" width="100%" height="auto"
+                                            src="https://www.youtube.com/embed/k_indcC331o?si=6_fVc3t6gv744eV1" frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen>
                                         </iframe>
-                                        <button class="play-video">Play
-                                            Video</button>
+                                        <button class="play-video" onclick="window.open('https://www.youtube.com/embed/k_indcC331o?si=6_fVc3t6gv744eV1', '_blank');">Play Video</button>
                                     </div>
                                 </div>
                             </div>
-    
-                            <div class="photo-card-container">
-                                <div class="photo-card" data-card-id="3">
-                                    <img src="./../images/famous associates/bajiprabhu2.jpeg"
-                                        alt="Chatrapati Shivaji Maharaj">
-                                    <div class="info">
-                                        <h2>Baji Prabhu Deshpande</h2>
-                                        <p>Baji Prabhu Deshpande</p>
-                                        <button class="toggle-info">Show
-                                            More</button>
-                                    </div>
-                                    <div class="full-info">
-                                        <p>Role: Military leader and a trusted
-                                            lieutenant of
-                                            Shivaji Maharaj.
-                                            Contribution: Known for his heroic last
-                                            stand at
-                                            the Battle of Ghodkhind (Pawan Khind) in
-                                            1660,
-                                            where he held off the enemy forces,
-                                            allowing
-                                            Shivaji Maharaj to escape to safety.</p>
-                                        <div class="video-container">
-                                            <iframe class="video" width="100%"
-                                                height="auto"
-                                                src="https://youtu.be/gPfNlo5S1wE?si=wKc5nYVYiFUw4Hvc"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen>
-                                            </iframe>
-                                            <button class="play-video">Play
-                                                Video</button>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Add more photo-card elements as needed -->
-                            </div>
-    
-                            <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        document.addEventListener('click', function(event) {
-            // Toggle full info
-            if (event.target.classList.contains('toggle-info')) {
-                const card = event.target.closest('.photo-card');
-                const allCards = document.querySelectorAll('.photo-card');
-        
-                allCards.forEach(c => {
-                    if (c !== card) {
-                        const fullInfo = c.querySelector('.full-info');
-                        const videoContainer = c.querySelector('.video-container');
-                        fullInfo.style.display = 'none';
-                        videoContainer.style.display = 'none';
-                        c.querySelector('.toggle-info').textContent = 'Show More';
-                        c.classList.remove('expanded'); // Remove the expanded class from all other cards
-                    }
-                });
-        
-                const fullInfo = card.querySelector('.full-info');
-                const videoContainer = card.querySelector('.video-container');
-                if (fullInfo.style.display === 'none' || fullInfo.style.display === '') {
-                    fullInfo.style.display = 'block';
-                    videoContainer.style.display = 'block';
-                    event.target.textContent = 'Show Less';
-                    card.classList.add('expanded'); // Add the expanded class to the clicked card
-                } else {
-                    fullInfo.style.display = 'none';
-                    videoContainer.style.display = 'none';
-                    event.target.textContent = 'Show More';
-                    card.classList.remove('expanded'); // Remove the expanded class from the clicked card
-                }
-            }
-        
-            // Play video
-            if (event.target.classList.contains('play-video')) {
-                const iframe = event.target.previousElementSibling;
-                const iframeSrc = iframe.getAttribute('src');
-                iframe.setAttribute('src', iframeSrc + '&autoplay=1');
-            }
-        });
-    });
-    
-    
-            </script>
-    
-                        </script>
-                    </body>
-                </html>
-    
-
-    
-
-</body>
-</html>
+            
+                            
+                            
+                            
+            
+                    <!-- More photo cards here... -->
+                   
+                    
+                </div>
+              
+            </body>
+           
+            
+            </html>
+            
