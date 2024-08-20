@@ -8,7 +8,7 @@
         *{
             margin: 0;
             padding: 0;
-           
+            background-size: cover;
         }
         .container{
              height: 190px;
@@ -41,7 +41,7 @@
             text-decoration: none;
         }
         a:hover{
-            color:black;
+            color:orangered;
         }
         .img_1{
           background-size: cover;
@@ -95,7 +95,7 @@
         padding: 40px;
         gap: 20px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0px  auto;
     }
     
     /* Photo Card */
@@ -104,7 +104,9 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
         overflow: hidden;
-        width: 300px;
+        width: 300px;   
+        text-align: center;
+        height: 500px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
@@ -163,7 +165,6 @@
         padding: 15px;
         color: #dddddd;
     }
-    
     .full-info p {
         margin-bottom: 20px;
     }
@@ -197,11 +198,12 @@
   background-color: #f6eaea;
 }
 .footer_sub{
+          
            display: flex;
             height: 350px;
             width: 100%;
             background-color: #232946;
-            
+            width: 1520px;            
             }
             .footer_1{
              height: 300px;
@@ -357,7 +359,7 @@
         <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
         <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
         <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="#">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="#"><b style="color: rgb(208, 60, 6);">FAMOUS ASSOCIATES & ALLIES</b></a></p>
         <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
         <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
      </div>
@@ -410,16 +412,12 @@
                             </div>
                         </div>
                     </div>
-            
-                    <div class="photo-card-container">
                         <div class="photo-card" data-card-id="1">
-                            <img src="./../images/famous associates/madhav rao.jfif" alt="Chatrapati Shivaji Maharaj">
+                            <img src="./../images/famous associates/madhav rao.jfif" alt="Chatrapati Shivaji Maharaj" class="img_3">
                             <div class="info">
                                 <h2>madhav rao</h2>
                                 <p>madhav rao</p>
-                                <button class="toggle-info"> <a href="./associates2.html"> show more</a></button>
-
-                              
+                                <button class="toggle-info"> <a href="./associates2.html"> show more</a></button>                              
                             </div>
                             <div class="full-info">
                                 <p>Role: Mother of Shivaji Maharaj.
@@ -438,9 +436,7 @@
                                     <button class="play-video" onclick="window.open('https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv', '_blank');">Play Video</button>
                                 </div>
                             </div>
-                        </div>
-            
-                        <div class="photo-card-container">
+                        </div>  
                             <div class="photo-card" data-card-id="1">
                                 <img src="./../images/famous associates/tanaji malusare 2.jfif" alt="Chatrapati Shivaji Maharaj" height="300px" width="500px">
                                 <div class="info">
@@ -466,8 +462,12 @@
                                     </div>
                                 </div>
                             </div>
-                    <!-- More photo cards here... -->
+                        </div>
+                    </div>
                 </div>
+                </div>
+                    <!-- More photo cards here... -->
+                    </div>
                 <Footer>
                     <div class="footer_sub">
                         <div class="footer_1">
