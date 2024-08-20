@@ -4,41 +4,43 @@
     <link rel="stylesheet" href="./../css/resources.css">
     <title>Shivaji Maharaj details</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        .head {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+        }
+        .head img {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
+        }
+        #Nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-left: 15px;
+        }
+        #Nav a {
+            color:white;
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+        #Nav a:hover {
+            color:orangered;
            
         }
-        .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
-          height: 150px;
-          box-shadow: 10px 10px 100px black ;
-        }
-        .head{
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-        }
-        #Nav{
-            font-size: 16px;
-            margin-top: 60px;
-            margin-left: 20px;
-            
-        }
-        .img{
-            height:130px;
-            width: 220px;
-        }
-        a{
-            color: beige;
-            text-decoration: none;
-        }
-        a:hover{
-            color:black;
-        }
-        .img_1{
-          background-size: cover;
-          width: 1520px;
+        
+        .container_2 {
+            padding: 20px;
         }
     </style>
 </head>
@@ -47,15 +49,15 @@
      <div class="head">
         <img src="../images/bgimg.png" alt="Rajmudra" class="img">
         <p id="Nav"><a href="../index.html">HOME</a></p>
-        <p id="Nav"><a href="../Pages/About.html">ABOUT</a></p>
-        <p id="Nav"><a href="../Pages/histroy.html">HISTROY</a></p>
-        <p id="Nav"><a href="../Pages/gallary.html">GALLERY</a></p>
+        <p id="Nav"><a href="../pages/about.html">ABOUT</a></p>
+        <p id="Nav"><a href="../pages/histroy.html">HISTROY</a></p>
+        <p id="Nav"><a href="../pages/gallary.html">GALLERY</a></p>
         <p id="Nav"><a href="">RESOURES</a></p>
-        <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
-        <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="../Pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
-        <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
-        <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
+        <p id="Nav"><a href="../pages/forts.html">FORTS</a></p>
+        <p id="Nav"><a href="../pages/cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
+        <p id="Nav"><a href="../pages/Assocites and allies.html">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="../pages/achivements.html">ACHIVEMENTS</a></p>
+        <p id="Nav"><a href="../pages/contact.html">CONTACT US</a></p>
      </div>
     </div>
     <div class="container_2">
@@ -115,6 +117,47 @@
         <a href=""><button class="but">Know more</button></a>
     </div>
    </div>
-   
+
+   <Footer>
+    <div class="footer_sub">
+        <div class="footer_1">
+            <img src="./../images/bgimg.png" alt="img" id="footer_img"><span id="footer_name">CHHATRAPATI SHIVAJI MAHARAJ</span>
+            <p id="footer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magnam, beatae, eos dolore magni provident vero doloremque iusto est non modi culpa aliquid, quasi praesentium ea blanditiis ullam illo veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="https://www.facebook.com/WeAreTeamIndia/">
+            <img src="./../images/facebook (1).png" alt="img" id="footer_add"></a>
+            <a href="https://www.instagram.com/WeAreTeamIndia/">
+            <img src="./../images/instagram.png" alt="img" id="footer_add"></a>
+            <a href="https://www.twitter.com/WeAreTeamIndia/">
+            <img src="./../images/twitter.png" alt="img" id="footer_add"></a>
+            <a href="https://www.linkdin.com/WeAreTeamIndia/">
+            <img src="./../images/about_imgs/linkdin.png" alt="img" id="footer_add"></a>
+            <a href="https://www.whatsapp.com/WeAreTeamIndia/">
+            <img src="./../images/contact-img/whatsapp.png" alt="img" id="footer_add"></a>
+        </div>
+        <div class="footer_1">
+            <span id="link">Quick links</span>
+            <a href="./../index.html">
+            <p id="link_1">Home</p></a>
+            <a href="./../pages/About.html">
+            <p id="link_2">About</p></a>
+            <a href="./../pages/gallery.html">
+            <p id="link_3">Gallery</p></a>
+            <a href="./../pages/histroy.html">
+            <p id="link_4">Histroy</p></a>
+            <a href="./../pages/resources.html">
+            <p id="link_5">Resources</p></a> 
+            <p style="color: white; margin-left: 70px; margin-top: 60px; font-size: 17px;" >Copyright © chhatrpatishivajimaharaj 2024</p>
+        </div>
+        <div class="footer_1">
+            <span id="link">Contact Us</span>
+            <img src="./../images/location.png" id="location">
+            <p id="footer_text1">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
+            <img src="./../images/phone call.png" alt="" id="location1">
+            <p id="footer_text2">+91-1239870990</p>
+            <img src="./../images/mail (1).png" alt="" id="location2">
+            <p id="footer_text3">chhatraptishivajimaharaj@gmail.com</p>
+        </div>
+    </div>  
+   </Footer>
 </body>
 </html>
