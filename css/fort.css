@@ -4,7 +4,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
     background-image: url(/images/fort_img/fort_backgraund.jpg);
     background-size: cover;
     background-position: center;
@@ -25,7 +24,7 @@ header {
     padding-left: 10px;
     display: flex;
     align-items: center;
-    padding-right: 1rem; /* Adds space between logo and nav links */
+    padding-right: 1rem;
 }
 
 .header-left img {
@@ -46,47 +45,39 @@ header {
     margin-left: 10px;
 }
 
-/* Navigation Bar Styles */
 .head {
     background: rgba(0, 0, 0, 0.5);
     padding: 1px 0;
     font-weight: bold;
 }
 
-
 #Nav {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 1rem; /* Reduced gap to fit more links */
+    gap: 1rem;
     padding: 10px;
     margin-right: 50px;
     list-style: none;
 }
 
 #Nav a {
-    white-space: nowrap; /* Prevent links from breaking onto multiple lines */
+    white-space: nowrap;
     color: white;
     text-decoration: none;
-    font-size: .8rem; /* Adjust font size for smaller screens */
-    padding: 20px 4px; /* Adjust padding to fit more links */
+    font-size: .8rem;
+    padding: 20px 4px;
 }
-
-#Nav a:hover {
-    background-color: #7d624e;
-    border-radius: 5px;
-}
-
 
 /* Responsive Adjustments */
 @media (max-width: 576px) {
     #Nav {
-        gap: 0.5rem; /* Further reduce gap on small screens */
+        gap: 0.5rem;
     }
 
     #Nav a {
-        font-size: 0.9rem; /* Reduce font size slightly for better fit */
-        padding: 6px 10px; /* Reduce padding slightly */
+        font-size: 0.9rem;
+        padding: 6px 10px;
     }
 }
 
@@ -106,6 +97,7 @@ p {
     margin: 0 0 1rem 0;
     font-size: 1.2em;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .fdesc {
@@ -113,14 +105,12 @@ p {
     color: rgba(220, 217, 226, 0.916);
 }
 
-/* Intro Styles */
 .intro {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 
-/* Card Styles */
 .fort-cards {
     display: flex;
     flex-wrap: wrap;
@@ -231,4 +221,104 @@ h2 {
     #Nav a {
         padding: 8px 16px;
     }
+}
+
+footer {
+    width: 100%;
+    background-color: #232946;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+#footer-img {
+    height: 90px;
+    width: 100px;
+}
+
+#footer-name {
+    font-size: 21px;
+    margin-top: 10px;
+    display: block;
+}
+
+#footer-text {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+#link-title,
+#contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-link {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffdd57;
+}
+
+.footer-copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.contact-text {
+    font-size: 16px;
 }
