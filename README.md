@@ -87,5 +87,5 @@ The Marathas remained the pre-eminent power in India until their defeat by the B
 ![alt text](./images/resources%20img/Gupti.jpeg)
 
   #  For more detail you can visit Our website
- ## http://127.0.0.1:5500/
+ ## http://127.0.0.1:5500/index.html
 
