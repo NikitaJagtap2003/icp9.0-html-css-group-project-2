@@ -68,6 +68,9 @@ header {
     font-size: .8rem;
     padding: 20px 4px;
 }
+#Nav a:hover{
+    color: orangered;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 576px) {
@@ -307,6 +310,7 @@ h2 {
          margin-inline-start: -110px;
          padding: 10px;
      }
+
      #link_6{
          margin-top: 90px;
          font-size: 20px;
