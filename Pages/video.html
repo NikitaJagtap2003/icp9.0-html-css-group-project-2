@@ -63,7 +63,26 @@
         .img:hover{
             filter: none;
         }
-        
+        /* Button Styles */
+        .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 1200px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e65c00; /* Darker shade manually set */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
     </style>
 </head>
 <body>
@@ -97,5 +116,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Vk_fRTcWguE?si=TDmbOpE0pkc4IHVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
+<div class="btn">
+    <a href="./gallery.html">
+        <button>
+      Back To Home
+        </button>
+        </a>
+    </div>
 </body>
 </html>

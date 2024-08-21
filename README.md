@@ -54,8 +54,38 @@ The Marathas remained the pre-eminent power in India until their defeat by the B
  Seals were a means to confer authenticity on official documents. Shahaji and Jijabai had Persian seals. But Shivaji, right from the beginning, used Sanskrit for his seal.The seal proclaims: "This seal of Shiva, son of Shah, shines forth for the welfare of the people and is meant to command increasing respect from the universe like the first phase of the moon."
 
   # Images
-  ![alt text](./images/images1.jpg)
+  ![alt text](./images/balshivaji1.jpg)
+  ![alt text](./images/balshivaji3.jpg)
   ![alt text](./images/balshivaji.jpg)
-  # Visit Our Website
- ## http://127.0.0.1:5501/
+  ![alt text](./images/baji%20prabhu.jfif)
+  ![alt text](./images/afzalkhan.jpg)
+  ![alt text](./images/bg.jpg)
+
+  # ACHIVEMENTS IN BATTLES
+
+  ## Treaty of Purandar
+  The attacks on Shaista Khan and Surat enraged Aurangzeb. In response, he sent the Rajput general Jai Singh I with an army numbering around 15,000 to defeat Shivaji.Throughout 1665, Jai Singh's forces pressed Shivaji, with their cavalry razing the countryside, and besieging Shivaji's forts. The Mughal commander succeeded in luring away several of Shivaji's key commanders, and many of his cavalrymen, into Mughal service. By mid-1665, with the fortress at Purandar besieged and near capture, Shivaji was forced to come to terms with Jai Singh.In the Treaty of Purandar, signed by Shivaji and Jai Singh on 11 June 1665, Shivaji agreed to give up 23 of his forts, keeping 12 for himself, and pay compensation of 400,000 gold hun to the Mughals.Shaista Khan and Muazzam were both replaced by Jai Singh after their failure against Shivaji. Jai Singh was given full military power and made viceroy of Deccan by the Mughal Emperor.
+        
+  Jai Singh started his campaign by isolating Shivaji; he persuaded some Maratha nobles to join him and offered to reduce the tribute of the Bijapur Sultanate if they joined him. Jai Singh then besieged Purandar and beat off all Maratha attempts to relieve the fort. In 1665, Shivaji sued for peace and agreed to hand over 23 of his 36 forts to Jai Singh.A mansab of 5000 was granted to shivaji's son, Sambhaji. Shivaji refused to personally serve Aurangzeb, but agreed to send his son Sambhaji. Shivaji also agreed to help the Mughals against Bijapur. Shivaji, along with his son Sambhaji, were taken at Agra in 1666
+
+# Resoures
+ ## 1. Talwar  
+![alt text](./images/resources%20img/Talwar.jpeg)
+ ## 2. Khanda
+![alt text](./images/resources%20img/Khanda.webp)
+## 3. Kurhad
+![alt text](./images/resources%20img/Kurhad.webp)
+## 4. Shamshir
+![alt text](./images/resources%20img/Shamshir.webp)
+## 5. Vajra Mushti
+![alt text](./images/resources%20img/vajra_Mushti.webp)
+## 6. chakra
+![alt text](./images/resources%20img/chakra.webp)
+## 7. Kataar
+![alt text](./images/resources%20img/Kataar.webp)
+## 8. Gupti
+![alt text](./images/resources%20img/Gupti.jpeg)
+
+  #  For more detail you can visit Our website
+ ## http://127.0.0.1:5500/index.html
 
