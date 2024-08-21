@@ -8,10 +8,17 @@
         *{
             margin: 0;
             padding: 0;
-           
+            background-size: cover;
         }
         .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+             height: 190px;
+             width: 100%;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 0px;
         }
         .head{
             display: flex;
@@ -20,26 +27,25 @@
         }
         #Nav{
             font-size: 17px;
-            margin-top: 100px;
+            margin-top: 90px;
             margin-left: 20px;
         }
         .img{
-            height: 200px;
-            width: 200px;
+            height: 90px;
+            width: 150px;
+            margin-inline-start:-1px;
+            margin-top: 50px;
         }
         a{
             color: beige;
             text-decoration: none;
         }
         a:hover{
-            color:black;
+            color:orangered;
         }
         .img_1{
           background-size: cover;
           width: 1520px;
-        }
-        .para_1{
-
         }
     </style>
     <style>
@@ -89,7 +95,7 @@
         padding: 40px;
         gap: 20px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0px  auto;
     }
     
     /* Photo Card */
@@ -98,7 +104,9 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
         border-radius: 15px;
         overflow: hidden;
-        width: 300px;
+        width: 300px;   
+        text-align: center;
+        height: 500px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
@@ -157,7 +165,6 @@
         padding: 15px;
         color: #dddddd;
     }
-    
     .full-info p {
         margin-bottom: 20px;
     }
@@ -190,6 +197,154 @@
   text-align: center;
   background-color: #f6eaea;
 }
+.footer_sub{
+          
+           display: flex;
+            height: 350px;
+            width: 100%;
+            background-color: #232946;
+            width: 1520px;            
+            }
+            .footer_1{
+             height: 300px;
+             width: 440px;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             margin: 20px;
+            }
+            #footer_img{
+                height: 90px;
+                width: 100px;
+            }
+            #footer_name{
+                color:white;
+                font-size: 21px;
+                margin-inline-start: -20px;
+                margin-top: 40px;
+            }
+            #footer_text{
+                color: #fff;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                padding: 10px;
+                margin-top: -40px;
+            }
+            #footer_add{
+                height: 40px;
+                width: 40px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                background-color: white;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+            #link{
+                font-size: 30px;
+                color: white;
+                margin-left: 130px;
+                margin-top: 30px;
+            }
+            #link_1{
+                margin-top: 80px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -100px;
+            }
+            #link_2{
+                margin-top: 100px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_3{
+                margin-top: 130px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_4{
+                margin-top: 160px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_5{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_6{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #location{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top:10px;
+            font-size: 20px;
+            margin-inline-start: -240px;
+            padding: 10px;
+            margin-top: 90px;
+            }
+            #footer_text1{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: 100px;
+                padding: 10px;
+                margin-top: -80px;
+            }
+            #location1{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -10px;
+            font-size: 20px;
+            margin-inline-start: 40px;
+            padding: 10px;
+            }
+            #footer_text2{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: -40px;
+                padding: 30px;
+                margin-top: -30px;
+            }
+            #location2{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-inline-start: -230px;
+            padding: 10px;
+             margin-top: 60px;
+            }
+             #footer_text3{
+                color: #fff;
+                font-size: 20px;
+                margin-left: 20px;
+                margin-inline-start: 90px;
+                padding: 30px;
+                margin-top: -100px;
+            }
 </style>
     
 </head>
@@ -204,7 +359,7 @@
         <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
         <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
         <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="#"><b style="color: rgb(208, 60, 6);">FAMOUS ASSOCIATES & ALLIES</b></a></p>
         <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
         <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
      </div>
@@ -216,25 +371,22 @@
   </div>
   <div class="footer-bottom">
     <marquee>
-        <h1> WELCOME TO ASSOCITES AND ALLIES </h1>    </marquee>   
+        <h1> WELCOME TO ASSOCITES AND ALLIES </h1></marquee>   
 </div>
         
             <body>
-
                 <!-- Header Section -->
                 <header class="page-header" style="color: black;">
                     <h1>Historical Figures: A Tribute to Icons</h1>
                     <p>This page features photo cards of legendary historical figures, each with a video that offers more insight into
                         their lives and contributions.</p>
                 </header>
-            
                 <div class="background-video-container">
                     <video autoplay muted loop class="background-video">
                         <source src="./../images/famous associates/myvideo copy.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
-            
                 <div class="photo-card-container">
                     <div class="photo-card" data-card-id="1">
                         <img src="./../images/famous associates/bajiprabhu2.jpeg" alt="Chatrapati Shivaji Maharaj">
@@ -260,16 +412,12 @@
                             </div>
                         </div>
                     </div>
-            
-                    <div class="photo-card-container">
                         <div class="photo-card" data-card-id="1">
-                            <img src="./../images/famous associates/madhav rao.jfif" alt="Chatrapati Shivaji Maharaj">
+                            <img src="./../images/famous associates/madhav rao.jfif" alt="Chatrapati Shivaji Maharaj" class="img_3">
                             <div class="info">
                                 <h2>madhav rao</h2>
                                 <p>madhav rao</p>
-                                <button class="toggle-info"> <a href="./associates2.html"> show more</a></button>
-
-                              
+                                <button class="toggle-info"> <a href="./associates2.html"> show more</a></button>                              
                             </div>
                             <div class="full-info">
                                 <p>Role: Mother of Shivaji Maharaj.
@@ -288,15 +436,13 @@
                                     <button class="play-video" onclick="window.open('https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv', '_blank');">Play Video</button>
                                 </div>
                             </div>
-                        </div>
-            
-                        <div class="photo-card-container">
+                        </div>  
                             <div class="photo-card" data-card-id="1">
                                 <img src="./../images/famous associates/tanaji malusare 2.jfif" alt="Chatrapati Shivaji Maharaj" height="300px" width="500px">
                                 <div class="info">
                                     <h2>TANAJI MALUSARE</h2>
                                     <p>TANAJI MALUSARE</p>
-                                    <button class="toggle-info">Show More</button>
+                                    <button class="toggle-info"> <a href="./Assocites and allies.html">Show More</button></a>
                                 </div>
                                 <div class="full-info">
                                     <p>Role: Eldest son of Shivaji Maharaj and
@@ -316,18 +462,53 @@
                                     </div>
                                 </div>
                             </div>
-            
-                            
-                            
-                            
-            
-                    <!-- More photo cards here... -->
-                   
-                    
+                        </div>
+                    </div>
                 </div>
-              
+                </div>
+                    <!-- More photo cards here... -->
+                    </div>
+                <Footer>
+                    <div class="footer_sub">
+                        <div class="footer_1">
+                            <img src="./../images/bgimg.png" alt="img" id="footer_img"><span id="footer_name">CHHATRAPATI SHIVAJI MAHARAJ</span>
+                            <p id="footer_text">Shivaji Maharaj, a visionary leader, founded the Maratha Empire through military innovations, wisdom quotes, and respect for women's rights, fostering harmony and inspiring generations with his legacy of resistance and governance.</p>
+                            <a href="https://www.facebook.com/WeAreTeamIndia/">
+                            <img src="./../images/facebook (1).png" alt="img" id="footer_add"></a>
+                            <a href="https://www.instagram.com/WeAreTeamIndia/">
+                            <img src="./../images/instagram.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.twitter.com/WeAreTeamIndia/">
+                            <img src="./../images/twitter.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.linkdin.com/WeAreTeamIndia/">
+                            <img src="./../images/about_imgs/linkdin.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.whatsapp.com/WeAreTeamIndia/">
+                            <img src="./../images/contact-img/whatsapp.png" alt="img" id="footer_add"></a>
+                        </div>
+                        <div class="footer_1">
+                            <span id="link">Quick links</span>
+                            <a href="./index.html">
+                            <p id="link_1">Home</p></a>
+                            <a href="./pages/About.html">
+                            <p id="link_2">About</p></a>
+                            <a href="./pages/gallery.html">
+                            <p id="link_3">Gallery</p></a>
+                            <a href="./pages/histroy.html">
+                            <p id="link_4">Histroy</p></a>
+                            <a href="./pages/resources.html">
+                            <p id="link_5">Resources</p></a> 
+                            <p style="color: white; margin-left: 70px; margin-top: 60px; font-size: 17px;" >Copyright © chhatrpatishivajimaharaj 2024</p>
+                        </div>
+                        <div class="footer_1">
+                            <span id="link">Contact Us</span>
+                            <img src="./../images/location1.png" alt="" id="location">
+                            <p id="footer_text1">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
+                            <img src="./../images/phone call.png" alt="" id="location1">
+                            <p id="footer_text2">+91-1239870990</p>
+                            <img src="./../images/mail (1).png" alt="" id="location2">
+                            <p id="footer_text3">chhatraptishivajimaharaj@gmail.com</p>
+                        </div>
+                    </div>  
+                   </Footer>
             </body>
-           
-            
             </html>
             

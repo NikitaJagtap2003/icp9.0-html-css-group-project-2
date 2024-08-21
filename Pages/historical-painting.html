@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historical-painting of Chatrapati Shivaji Maharaj</title>
     <style>
-        * {
+         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -21,8 +21,8 @@
         }
         .title {
             text-align: center;
-            font-size: 15px;
-            margin: 10px;
+            font-size: 28px;
+            margin: 30px 0;
             font-weight: bold;
             color: #4a148c;
         }
@@ -37,8 +37,8 @@
             width: 350px; /* Increased size of images */
             height: 460px; /* Fixed height to maintain aspect ratio */
             object-fit: cover;
-            border: 0.5px solid #7d4c7c;
-            border-radius: 10px;
+            border: 2px solid #7d4c7c;
+            border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -63,8 +63,28 @@
         .img:hover{
             filter: none;
         }
-        
-    </style>
+        /* Button Styles */
+        .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 1200px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.btn:hover {
+    background-color: #e65c00; /* Darker shade manually set */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+        </style>
 </head>
 <body>
     <div class="container">
@@ -94,5 +114,12 @@
         <img src="../images/historical-images-10.webp"  alt="Shivaji Maharaj 10"/>
     </div>
 </div>
+<div class="btn">
+    <a href="./gallery.html">
+        <button>
+      Back To Home
+        </button>
+        </a>
+    </div>
 </body>
 </html>
