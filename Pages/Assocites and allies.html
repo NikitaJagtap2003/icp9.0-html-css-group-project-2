@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Shivaji Maharaj details</title>
+ 
     <style>
         *{
             margin: 0;
             padding: 0;
-           
+            background-size: cover;
         }
         .container{
-          background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+             height: 190px;
+             width: 100%;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             border-radius: none;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 0px;
         }
         .head{
             display: flex;
@@ -18,30 +27,328 @@
         }
         #Nav{
             font-size: 17px;
-            margin-top: 100px;
+            margin-top: 90px;
             margin-left: 20px;
         }
         .img{
-            height: 200px;
-            width: 200px;
+            height: 90px;
+            width: 150px;
+            margin-inline-start:-1px;
+            margin-top: 50px;
         }
         a{
             color: beige;
             text-decoration: none;
         }
         a:hover{
-            color:black;
+            color:orangered;
         }
         .img_1{
           background-size: cover;
           width: 1520px;
         }
-        .para_1{
-
-        }
     </style>
+    <style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        background-color: #111111;
+    }
+    
+    .page-header {
+        text-align: center;
+        padding: 20px;
+        background: rgba(216, 205, 205, 0.5);
+        backdrop-filter: blur(5px);
+        color: #191717c8;
+        z-index: 10;
+        position: relative;
+    }
+    
+    /* Background Video */
+    .background-video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    .background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    
+    /* Photo Card Container */
+    .photo-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0px  auto;
+    }
+    
+    /* Photo Card */
+    .photo-card {
+        background: linear-gradient(145deg, #444444, #222222);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        overflow: hidden;
+        width: 300px;   
+        text-align: center;
+        height: 500px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .photo-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.7);
+    }
+    
+    /* Image in Photo Card */
+    .photo-card img {
+        width: 100%;
+        border-bottom: 2px solid #ffffff;
+        transition: transform 0.3s ease;
+    }
+    
+    .photo-card:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Info Section */
+    .info {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .info h2 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #ffcc00;
+    }
+    
+    .info p {
+        font-size: 1em;
+        color: #cccccc;
+    }
+    
+    .toggle-info {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #000000;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .toggle-info:hover {
+        background-color: #ffaa00;
+    }
+    
+    /* Full Info Section */
+    .full-info {
+        display: none;
+        padding: 15px;
+        color: #dddddd;
+    }
+    .full-info p {
+        margin-bottom: 20px;
+    }
+    
+    /* Video Container */
+    .video-container {
+        text-align: center;
+    }
+    
+    .play-video {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #000000;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .play-video:hover {
+        background-color: #ffaa00;
+    }
+</style>
+<style> 
+    .footer-bottom {
+  margin-top: 5px;
+  color: #c05a5a;
+  text-align: center;
+  background-color: #f6eaea;
+}
+.footer_sub{
+          
+           display: flex;
+            height: 350px;
+            width: 100%;
+            background-color: #232946;
+            width: 1520px;            
+            }
+            .footer_1{
+             height: 300px;
+             width: 440px;
+             flex-direction: row;
+             display: flex;
+             flex-wrap: wrap;
+             margin: 20px;
+            }
+            #footer_img{
+                height: 90px;
+                width: 100px;
+            }
+            #footer_name{
+                color:white;
+                font-size: 21px;
+                margin-inline-start: -20px;
+                margin-top: 40px;
+            }
+            #footer_text{
+                color: #fff;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                padding: 10px;
+                margin-top: -40px;
+            }
+            #footer_add{
+                height: 40px;
+                width: 40px;
+                margin-left: 20px;
+                margin-inline-start: 40px;
+                background-color: white;
+                border-radius: 50%;
+                border: 3px solid white;
+            }
+            #link{
+                font-size: 30px;
+                color: white;
+                margin-left: 130px;
+                margin-top: 30px;
+            }
+            #link_1{
+                margin-top: 80px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -100px;
+            }
+            #link_2{
+                margin-top: 100px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_3{
+                margin-top: 130px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_4{
+                margin-top: 160px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_5{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #link_6{
+                margin-top: 190px;
+                font-size: 20px;
+                color: white;
+                margin-inline-start: -110px;
+                padding: 10px;
+            }
+            #location{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top:10px;
+            font-size: 20px;
+            margin-inline-start: -240px;
+            padding: 10px;
+            margin-top: 90px;
+            }
+            #footer_text1{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: 100px;
+                padding: 10px;
+                margin-top: -80px;
+            }
+            #location1{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -10px;
+            font-size: 20px;
+            margin-inline-start: 40px;
+            padding: 10px;
+            }
+            #footer_text2{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 20px;
+                margin-inline-start: -40px;
+                padding: 30px;
+                margin-top: -30px;
+            }
+            #location2{
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-inline-start: -230px;
+            padding: 10px;
+             margin-top: 60px;
+            }
+             #footer_text3{
+                color: #fff;
+                font-size: 20px;
+                margin-left: 20px;
+                margin-inline-start: 90px;
+                padding: 30px;
+                margin-top: -100px;
+            }
+</style>
+    
 </head>
-<body>
+<body background="">
     <div class="container">
      <div class="head">
         <img src="../images/bgimg.png" alt="Rajmudra" class="img">
@@ -52,7 +359,7 @@
         <p id="Nav"><a href="../Pages/resources.html">RESOURES</a></p>
         <p id="Nav"><a href="../Pages/forts.html">FORTS</a></p>
         <p id="Nav"><a href="../Pages/Cluture contribution.html">CLUTURE CONTRIBUTION</a></p>
-        <p id="Nav"><a href="">FAMOUS ASSOCIATES & ALLIES</a></p>
+        <p id="Nav"><a href="#"><b style="color: rgb(208, 60, 6);">FAMOUS ASSOCIATES & ALLIES</b></a></p>
         <p id="Nav"><a href="../Pages/achivements.html">ACHIVEMENTS</a></p>
         <p id="Nav"><a href="../Pages/contact.html">CONTACT US</a></p>
      </div>
@@ -60,8 +367,148 @@
     <div class="container_2">
       <div class="text">
     <img src="./images/shivaji.jpeg" alt="" class="img_1">
-   
   </div>
-  </div> 
-</body>
-</html>
+  </div>
+  <div class="footer-bottom">
+    <marquee>
+        <h1> WELCOME TO ASSOCITES AND ALLIES </h1></marquee>   
+</div>
+        
+            <body>
+                <!-- Header Section -->
+                <header class="page-header" style="color: black;">
+                    <h1>Historical Figures: A Tribute to Icons</h1>
+                    <p>This page features photo cards of legendary historical figures, each with a video that offers more insight into
+                        their lives and contributions.</p>
+                </header>
+                <div class="background-video-container">
+                    <video autoplay muted loop class="background-video">
+                        <source src="./../images/famous associates/myvideo copy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="photo-card-container">
+                    <div class="photo-card" data-card-id="1">
+                        <img src="./../images/famous associates/bajiprabhu2.jpeg" alt="Chatrapati Shivaji Maharaj">
+                        <div class="info">
+                            <h2>BAJI PRABHU</h2>
+                            <p>BAJI PRABHU</p>
+                            <button class="toggle-info"> <a href="./associates1.html"> show more</a></button>
+                        </div>
+                        <div class="full-info">
+                            <p>Shivaji Maharaj's mother, a significant influence in his early life. Jijabai taught Shivaji the
+                                importance of strategy, values, and dharma by telling him stories from the great epics and folklore.
+                                She taught him the art of politics and prepared him to be a just and honest ruler. She even supervised
+                                his weapon training sessions. Jijabai told young Shivaji the stories of Rama, Krishna, Bhim, and
+                                Abhimanyu. After listening to these stories, the thoughts of displaying valour like the brave men came
+                                to Shivaji's mind. The thought of fighting against injustice also came to his mind.</p>
+                            <div class="video-container">
+                                <iframe class="video" width="100%" height="auto"
+                                    src="https://www.youtube.com/embed/gXRFYol9-MI?si=gjWyxLkVGuEWYAhM" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                                <button class="play-video" onclick="window.open('https://www.youtube.com/embed/gXRFYol9-MI?si=gjWyxLkVGuEWYAhM', '_blank');">Play Video</button>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="photo-card" data-card-id="1">
+                            <img src="./../images/famous associates/madhav rao.jfif" alt="Chatrapati Shivaji Maharaj" class="img_3">
+                            <div class="info">
+                                <h2>madhav rao</h2>
+                                <p>madhav rao</p>
+                                <button class="toggle-info"> <a href="./associates2.html"> show more</a></button>                              
+                            </div>
+                            <div class="full-info">
+                                <p>Role: Mother of Shivaji Maharaj.
+                                    Contribution: Jijabai was a guiding
+                                    force in Shivaji’s life, instilling in
+                                    him the values of courage, justice, and
+                                    devotion to his people. Her influence
+                                    shaped Shivaji's character and his
+                                    vision of swarajya.</p>
+                                <div class="video-container">
+                                    <iframe class="video" width="100%" height="auto"
+                                        src="https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <button class="play-video" onclick="window.open('https://www.youtube.com/embed/jYFDR3EZ6OI?si=-ltaMlv2y5VzTniv', '_blank');">Play Video</button>
+                                </div>
+                            </div>
+                        </div>  
+                            <div class="photo-card" data-card-id="1">
+                                <img src="./../images/famous associates/tanaji malusare 2.jfif" alt="Chatrapati Shivaji Maharaj" height="300px" width="500px">
+                                <div class="info">
+                                    <h2>TANAJI MALUSARE</h2>
+                                    <p>TANAJI MALUSARE</p>
+                                    <button class="toggle-info"> <a href="./Assocites and allies.html">Show More</button></a>
+                                </div>
+                                <div class="full-info">
+                                    <p>Role: Eldest son of Shivaji Maharaj and
+                                        successor to the Maratha throne.
+                                        Contribution: Though his reign was
+                                        short, Sambhaji Maharaj continued to
+                                        resist the Mughal Empire and played a
+                                        significant role in preserving the
+                                        Maratha Empire.</p>
+                                    <div class="video-container">
+                                        <iframe class="video" width="100%" height="auto"
+                                            src="https://www.youtube.com/embed/k_indcC331o?si=6_fVc3t6gv744eV1" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        <button class="play-video" onclick="window.open('https://www.youtube.com/embed/k_indcC331o?si=6_fVc3t6gv744eV1', '_blank');">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <!-- More photo cards here... -->
+                    </div>
+                <Footer>
+                    <div class="footer_sub">
+                        <div class="footer_1">
+                            <img src="./../images/bgimg.png" alt="img" id="footer_img"><span id="footer_name">CHHATRAPATI SHIVAJI MAHARAJ</span>
+                            <p id="footer_text">Shivaji Maharaj, a visionary leader, founded the Maratha Empire through military innovations, wisdom quotes, and respect for women's rights, fostering harmony and inspiring generations with his legacy of resistance and governance.</p>
+                            <a href="https://www.facebook.com/WeAreTeamIndia/">
+                            <img src="./../images/facebook (1).png" alt="img" id="footer_add"></a>
+                            <a href="https://www.instagram.com/WeAreTeamIndia/">
+                            <img src="./../images/instagram.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.twitter.com/WeAreTeamIndia/">
+                            <img src="./../images/twitter.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.linkdin.com/WeAreTeamIndia/">
+                            <img src="./../images/about_imgs/linkdin.png" alt="img" id="footer_add"></a>
+                            <a href="https://www.whatsapp.com/WeAreTeamIndia/">
+                            <img src="./../images/contact-img/whatsapp.png" alt="img" id="footer_add"></a>
+                        </div>
+                        <div class="footer_1">
+                            <span id="link">Quick links</span>
+                            <a href="./index.html">
+                            <p id="link_1">Home</p></a>
+                            <a href="./pages/About.html">
+                            <p id="link_2">About</p></a>
+                            <a href="./pages/gallery.html">
+                            <p id="link_3">Gallery</p></a>
+                            <a href="./pages/histroy.html">
+                            <p id="link_4">Histroy</p></a>
+                            <a href="./pages/resources.html">
+                            <p id="link_5">Resources</p></a> 
+                            <p style="color: white; margin-left: 70px; margin-top: 60px; font-size: 17px;" >Copyright © chhatrpatishivajimaharaj 2024</p>
+                        </div>
+                        <div class="footer_1">
+                            <span id="link">Contact Us</span>
+                            <img src="./../images/location1.png" alt="" id="location">
+                            <p id="footer_text1">HQF6+X8Q, National Games Park, Mahalunge, Pune, Maharashtra 411045</p>
+                            <img src="./../images/phone call.png" alt="" id="location1">
+                            <p id="footer_text2">+91-1239870990</p>
+                            <img src="./../images/mail (1).png" alt="" id="location2">
+                            <p id="footer_text3">chhatraptishivajimaharaj@gmail.com</p>
+                        </div>
+                    </div>  
+                   </Footer>
+            </body>
+            </html>
+            
