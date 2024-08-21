@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\91837\\OneDrive\\Documents\\Desktop\\icp9.0-html-css-group-project-2",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}
